@@ -1,0 +1,19 @@
+.SubscriberNewsLetter-wrapper {
+  background-image: url("../Images//aboutUs-contact.png");
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SubscriberNewsLetter-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+.testimonial-wrapper {
+  background-image: url("../Images/map-02.png") !important;
+  /* background-color: #0aadeb !important; */
+  padding: 60px;
+  height: auto;
+  /* margin-top: 45px; */
+}
+.testimonial-mainwrapper {
+  background-color: #0aadeb !important;
+  width: 100%;
+}
+.testimonial-wrapperleft {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonialleft-heading {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.testimonialleft-subheading {
+  color: #fff;
+  font-size: 35px !important;
+  line-height: 45px !important;
+  text-transform: none;
+  font-weight: 700;
+  margin-bottom: 15px;
+  /* font-style: normal; */
+}
+
+.testimonialleft-subheadingblack {
+  color: #0c121d;
+}
+
+.testimonialleft-content {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.testimonialleft-lowerContext {
+  font-weight: 500;
+  text-decoration: underline;
+}

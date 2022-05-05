@@ -1,0 +1,58 @@
+.aboutuswho-we-are-imgdiv {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.AboutUsWhoWeAre-wrapper {
+  box-sizing: border-box;
+  padding: 64px 10px;
+  /* background-color: #eef7f9; */
+}
+.AboutUsWhoWeAre-Outerwrapper {
+  background-color: #eef7f9;
+}
+.AboutUsWhoWeAre-lineIcon {
+  color: #0aadeb;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.AboutUsWhoWeAre-line {
+  display: flex;
+  align-items: center;
+}
+.AboutUsWhoWeAre-heading {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #b0b6bf;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.AboutUsWhoWeAre-subHeadingColor {
+  color: #0aadeb;
+}
+.AboutUsWhoWeAre-subHeading {
+  font-size: 30px !important;
+  color: #0c121d;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.AboutUsWhoWeAre-row1 {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  font-weight: 600;
+  color: #6d7a8c;
+  margin-bottom: 15px;
+}
+
+.AboutUsWhoWeAre-row2 {
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6d7a8c;
+  font-weight: 400;
+}

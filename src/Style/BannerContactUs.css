@@ -1,0 +1,35 @@
+.bannerContactUs-wrapper {
+  background-image: url("../Images/aboutUs-contact.png");
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerContactUs-innerWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bannercontactus-btn {
+}
+.bannerContactUs-left {
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+.bannercontactus-btn button {
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  outline: none;
+  padding: 18px 40px;
+  font-weight: 600;
+}
+.bannerContactUs-number {
+  color: #0aadeb;
+  font-size: 35px;
+  font-weight: 600;
+}

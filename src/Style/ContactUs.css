@@ -1,0 +1,100 @@
+.contact-card-wrapper {
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 0 9px 24px 0 rgb(26 47 106 / 5%);
+  padding: 30px 25px;
+  border: 1px solid #dce5e7;
+}
+.contactUs-heading {
+  min-height: 203px;
+  background: #e6edf3;
+  padding: 64px 64px;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.contactUs-card-div {
+  margin: 5px !important;
+  margin-bottom: 90px !important;
+}
+.contact-card-imagediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background-color: #0aadeb;
+  margin-right: 25px;
+}
+.contact-card-imagediv svg {
+  font-size: 40px;
+  color: #fff;
+}
+
+.contact-card-contentDiv {
+}
+
+.contact-card-heading {
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact-card-subheadingone {
+  color: #6d7a8c;
+  font-size: 14px;
+}
+.contact-card-subHeadingtwo {
+  color: #6d7a8c;
+  font-size: 14px;
+}
+.messageus-outerwrapper {
+  border-radius: 6px;
+  box-shadow: 0 9px 35px 0 rgb(26 47 106 / 7%);
+  margin-bottom: 1.5rem;
+  padding: 10px 0px;
+}
+.messageus-wrapper {
+  padding: 20px 40px;
+}
+.messageus-heading {
+  color: #b0b6bf;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.messageus-main-heading {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.contactus-input {
+  width: 100%;
+  border: 1px solid #dce5e7;
+  font-size: 14px;
+  background: #fff;
+  color: #888;
+  height: 55px;
+  border-radius: 5px;
+  box-shadow: 0 9px 24px 0 rgb(26 47 106 / 5%);
+  padding: 0px 15px;
+  margin-bottom: 25px;
+}
+
+.contactus-bookBtn {
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  background-color: #0c121d;
+  color: #fff;
+  font-size: 13px;
+  padding: 20px 30px 18px;
+  letter-spacing: 1px;
+}
+
+.contactus-inputWrapper {
+  padding: 20px 40px !important;
+}
+
+.contactUs-iframe {
+  width: 100%;
+}

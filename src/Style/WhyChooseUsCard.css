@@ -1,0 +1,34 @@
+.whyChooseUsCard-wrapper {
+  border-radius: 6px;
+  box-shadow: 0 9px 24px 0 rgb(26 47 106 / 5%);
+  padding: 30px 25px;
+  border: 1px solid #dce5e7;
+  display: flex;
+  box-sizing: border-box;
+  width: 370px;
+  margin: 10px;
+}
+.whyChooseUsCard-imagediv {
+  width: 40%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.whyChooseUsCard-imagediv div {
+  height: 50px;
+  width: 50px;
+  background-color: #0aadeb;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.whyChooseUsCard-heading {
+  color: #0c121d;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.whyChooseUsCard-content {
+  margin-top: 5px;
+  color: #6d7a8c;
+}
