@@ -9,8 +9,10 @@ import Slider2 from "../../Images/SliderImage2.jpg";
 import expert from "../../Images/expert.png";
 import Slider3 from "../../Images/Slider3.jpg";
 import Slider1 from "../../Images/SliderImage1.jpg";
+import { useNavigate } from "react-router-dom";
 
 const ImageSlider = () => {
+  let navigate = useNavigate();
   return (
     <div>
       <div className="sliderContainer">
@@ -35,11 +37,19 @@ const ImageSlider = () => {
                 Solution Partner
               </h3>
               <div className="sliderPage1AnimationButton">
-                <button className="sliderpageOneBtn">CONTACT US</button>
-                <button className="sliderpage_circleBtn">
+                <button
+                  className="sliderpageOneBtn"
+                  onClick={() => {
+                    navigate("/contactus");
+                  }}
+                >
+                  CONTACT US
+                </button>
+
+                {/* <button className="sliderpage_circleBtn">
                   <IoMdArrowDropright className="circleBtnIcon" />
                 </button>
-                <span className="btnClick">How We Work</span>
+                <span className="btnClick">How We Work</span>  */}
               </div>
             </div>
           </div>
@@ -56,11 +66,18 @@ const ImageSlider = () => {
                 Solution Partner
               </h3>
               <div className="sliderPage1AnimationButton">
-                <button className="sliderpageOneBtn">CONTACT US</button>
-                <button className="sliderpage_circleBtn">
+                <button
+                  className="sliderpageOneBtn"
+                  onClick={() => {
+                    navigate("/contactus");
+                  }}
+                >
+                  CONTACT US
+                </button>
+                {/* <button className="sliderpage_circleBtn">
                   <IoMdArrowDropright className="circleBtnIcon" />
                 </button>
-                <span className="btnClick">How We Work</span>
+                <span className="btnClick">How We Work</span> */}
               </div>
             </div>
           </div>
@@ -76,11 +93,18 @@ const ImageSlider = () => {
                 Solution Partner
               </h3>
               <div className="sliderPage1AnimationButton">
-                <button className="sliderpageOneBtn">CONTACT US</button>
-                <button className="sliderpage_circleBtn">
+                <button
+                  className="sliderpageOneBtn"
+                  onClick={() => {
+                    navigate("/contactus");
+                  }}
+                >
+                  CONTACT US
+                </button>
+                {/* <button className="sliderpage_circleBtn">
                   <IoMdArrowDropright className="circleBtnIcon" />
                 </button>
-                <span className="btnClick">How We Work</span>
+                <span className="btnClick">How We Work</span> */}
               </div>
             </div>
           </div>

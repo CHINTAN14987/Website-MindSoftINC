@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "../../Style/ContactUs.css";
 import ContactUsCard from "../Card/ContactUsCard";
@@ -7,6 +7,14 @@ import { BiMap } from "react-icons/bi";
 import { ImCalendar } from "react-icons/im";
 
 const ContactUs = () => {
+  const [textValue, settextValue] = useState();
+  const [emailValue, setemailValue] = useState();
+  const changeHandlerName = (e) => {
+    settextValue(e.target.value);
+  };
+  const changeHandlerEmail = (e) => {
+    setemailValue(e.target.value);
+  };
   return (
     <div>
       <div className="contactUs-heading">
@@ -26,8 +34,8 @@ const ContactUs = () => {
             <ContactUsCard
               image={<BiMap />}
               heading={"Our Address"}
-              subHeadingOne={"A-12 Sector 12 Noida - 201301"}
-              subHeadingTwo={" "}
+              subHeadingOne={"B-19 4th-Floor Sector 63"}
+              subHeadingTwo={" Noida 201301"}
             />
           </Col>
           <Col xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
@@ -45,7 +53,7 @@ const ContactUs = () => {
             <div className="messageus-wrapper">
               <div className="messageus-heading">MESSAGE US</div>
               <div className="messageus-main-heading">
-                Have be any Question? Fell free to contact with us.
+                Have any Question? Fell free to contact us.
               </div>
               {/* <div></div> */}
             </div>
@@ -61,22 +69,38 @@ const ContactUs = () => {
           >
             <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <input
-                text="text"
+                type="text"
                 placeholder="Your Name"
                 className="contactus-input"
+                name="mytext"
+                value={textValue}
+                onChange={changeHandlerName}
               />
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
               <input
-                text="email"
+                type="email"
                 placeholder="Email Address"
                 className="contactus-input"
+                name="email"
+                value={emailValue}
+                onChange={changeHandlerEmail}
               />
               {/* <input text />
             <input /> */}
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-              <button className="contactus-bookBtn">BOOK A CONSULTATION</button>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+
+                  settextValue("");
+                  setemailValue("");
+                }}
+                className="contactus-bookBtn"
+              >
+                BOOK A CONSULTATION
+              </button>
             </Col>
           </Col>
         </Row>

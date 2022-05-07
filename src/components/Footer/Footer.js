@@ -23,7 +23,7 @@ const Footer = () => {
               <div className="footer-card">
                 <div className="footerCard-top">
                   <div className="footerCard-address">
-                    Address- A12 Sector 12 Noida - 201301
+                    Address- B-19 4th-Floor Sector 63 Noida - 201301
                   </div>
                   <div>
                     <GoLocation />
@@ -33,7 +33,7 @@ const Footer = () => {
                 <div className="footerCard-bottom">
                   <div className="footerCard-bottom-text">
                     Talk To Our Support <br />
-                    <b>(312) 585-6061</b>
+                    <b>+91 902-720-4993</b>
                   </div>
                   <div>
                     <MdWifiCalling3 />
@@ -96,7 +96,7 @@ const Footer = () => {
         </Row>
       </Container>
       <div className="footer-copyright">
-        Copyright © 2022 Blue InfoChips, All Rights Reserved.
+        Copyright © 2021 Blue InfoChips, All Rights Reserved.
       </div>
     </div>
   );

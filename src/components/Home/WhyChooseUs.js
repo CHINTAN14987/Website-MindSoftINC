@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
             <div className="whychoose-subHeading">
               Why Choose Blue InfoChips
             </div>
-            <div className="whychoose-subHeadingColor">Expert consultant</div>
+            <div className="whychoose-subHeadingColor">Expert Consultant</div>
           </div>
         </Col>
 
