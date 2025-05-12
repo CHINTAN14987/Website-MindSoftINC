@@ -4,6 +4,7 @@
   box-shadow: 0 9px 24px 0 rgb(26 47 106 / 5%);
   padding: 30px 25px;
   border: 1px solid #dce5e7;
+  margin-top: 150px;
 }
 .contactUs-heading {
   min-height: 203px;
@@ -14,7 +15,7 @@
   margin-bottom: 100px;
 }
 .contactUs-card-div {
-  margin: 5px !important;
+  /* margin: 5px !important; */
   margin-bottom: 90px !important;
 }
 .contact-card-imagediv {

@@ -13,9 +13,9 @@ const Footer = () => {
         <Row className="footer-wrapper">
           <Col>
             <div>
-              <div className="footer-heading">Blue InfoChips</div>
+              <div className="footer-heading">ACAA </div>
               <div>
-                Blue InfoChips has been delivering extraordinary eCommerce, Web
+                ACAA  has been delivering extraordinary eCommerce, Web
                 Development, Mobile App Development, CRM Development and
                 Creative Design services.
               </div>
@@ -23,7 +23,7 @@ const Footer = () => {
               <div className="footer-card">
                 <div className="footerCard-top">
                   <div className="footerCard-address">
-                    Address- B-19 4th-Floor Sector 63 Noida - 201301
+                    Address- B-19 Gurugram - 212343
                   </div>
                   <div>
                     <GoLocation />
@@ -33,13 +33,13 @@ const Footer = () => {
                 <div className="footerCard-bottom">
                   <div className="footerCard-bottom-text">
                     Talk To Our Support <br />
-                    <b>+91 902-720-4993</b>
+                    <b>+91 981-720-4593</b>
                   </div>
                   <div>
                     <MdWifiCalling3 />
                   </div>
                 </div>
-                <div className="footerCard-email">info@blueinfochips.com</div>
+                <div className="footerCard-email">info@ACAA.com</div>
               </div>
             </div>
           </Col>
@@ -96,7 +96,7 @@ const Footer = () => {
         </Row>
       </Container>
       <div className="footer-copyright">
-        Copyright © 2021 Blue InfoChips, All Rights Reserved.
+        Copyright © 2021 ACAA , All Rights Reserved.
       </div>
     </div>
   );

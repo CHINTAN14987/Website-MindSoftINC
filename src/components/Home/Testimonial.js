@@ -17,9 +17,9 @@ const Testimonial = () => {
             className="d-flex align-items-center"
           >
             <div className="testimonial-wrapperleft">
-              <div className="testimonialleft-heading"> TESTIMONIAL</div>
+              {/* <div className="testimonialleft-heading"> TESTIMONIAL</div> */}
               <div className="testimonialleft-subheading">
-                Testimonials from satisfied Blue InfoChips &nbsp;
+                Testimonials from satisfied ACAA  &nbsp;
                 <span className="testimonialleft-subheadingblack">
                   clients and Partners
                 </span>
@@ -28,9 +28,9 @@ const Testimonial = () => {
               <div className="testimonialleft-content">
                 Our Priority Is Making Sure You're Happy
               </div>
-              <div className="testimonialleft-lowerContext">
+              {/* <div className="testimonialleft-lowerContext">
                 VIEW ALL TESTIMONIALS
-              </div>
+              </div> */}
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>

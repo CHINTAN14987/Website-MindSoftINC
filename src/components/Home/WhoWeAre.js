@@ -14,7 +14,7 @@ const WhoWeAre = () => {
             <div className="whychoose-heading">WHO WE ARE</div>
             <div className="whychoose-subHeading">
               What we do at&nbsp;
-              <span className="whychoose-subHeadingColor">Blue InfoChips</span>
+              <span className="whychoose-subHeadingColor">ACAA </span>
             </div>
           </div>
         </Col>

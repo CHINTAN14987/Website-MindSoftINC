@@ -17,8 +17,8 @@ const AboutUsWhoWeAre = () => {
           <Col xs={12} sm={12} md={12} lg={6} xl={6} xxl={6}>
             <div className="AboutUsWhoWeAre-heading">WHO WE ARE</div>
             <div className="AboutUsWhoWeAre-subHeading">
-              Blue&nbsp;
-              <span className="AboutUsWhoWeAre-subHeadingColor">InfoChips</span>
+              ACAA&nbsp;
+              <span className="AboutUsWhoWeAre-subHeadingColor"></span>
             </div>
             <div className="AboutUsWhoWeAre-row1">
               To gain competitive edge in business, development speed is

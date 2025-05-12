@@ -17,16 +17,16 @@ const ContactUs = () => {
   };
   return (
     <div>
-      <div className="contactUs-heading">
+      {/* <div className="contactUs-heading">
         <Container>Contact Us</Container>
-      </div>
+      </div> */}
       <Container>
         <Row className="contactUs-card-div">
           <Col xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
             <ContactUsCard
               image={<AiOutlineMail />}
               heading={"Email Address"}
-              subHeadingOne={"info@blueinfochips.com"}
+              subHeadingOne={"info@ACAA.com"}
               // subHeadingTwo={"email@example.com"}
             />
           </Col>
@@ -34,8 +34,8 @@ const ContactUs = () => {
             <ContactUsCard
               image={<BiMap />}
               heading={"Our Address"}
-              subHeadingOne={"B-19 4th-Floor Sector 63"}
-              subHeadingTwo={" Noida 201301"}
+              subHeadingOne={"B-19 4th-Floor"}
+              subHeadingTwo={" Gurugram"}
             />
           </Col>
           <Col xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>

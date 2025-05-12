@@ -28,11 +28,11 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="btn-container">
-                <div className="btn">
+                {/* <div className="btn">
                   <button className="cardButton">
                     <BsArrowRight className="cardIcon" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </Col>
@@ -53,11 +53,11 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="btn-container">
-                <div className="btn">
+                {/* <div className="btn">
                   <button className="cardButton">
                     <BsArrowRight className="cardIcon" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </Col>
@@ -79,11 +79,11 @@ const HomePage = () => {
                 </p>
               </div>
               <div className="btn-container">
-                <div className="btn">
+                {/* <div className="btn">
                   <button className="cardButton">
                     <BsArrowRight className="cardIcon" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </Col>

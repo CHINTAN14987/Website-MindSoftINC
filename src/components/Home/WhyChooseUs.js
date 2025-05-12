@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
           <div className="whyChooseUs-headingWrapper">
             <div className="whychoose-heading">WHY CHOOSE US</div>
             <div className="whychoose-subHeading">
-              Why Choose Blue InfoChips
+              Why Choose ACAA 
             </div>
             <div className="whychoose-subHeadingColor">Expert Consultant</div>
           </div>

@@ -15,10 +15,10 @@ const Services = () => {
             Developing Customer Ideas
             <span className="servicesSpan"> Into Reality</span>
           </h2>
-          <div>
+          {/* <div>
             <span className="servicesView"> VIEW ALL SERVICES</span>
             <BsArrowRight />
-          </div>
+          </div> */}
         </div>
         <div className="ServicesProvidedInnerContainer">
           <p>
@@ -44,11 +44,11 @@ const Services = () => {
                 Business application development software [...]
               </p>
             </div>
-            <div className="summaryButton">
+            {/* <div className="summaryButton">
               <button className="myButton">
                 <BsArrowRight className="summaryButtonIcon" />
               </button>
-            </div>
+            </div> */}
           </Col>
           <Col className="d-flex flex-column services p-3" md={4}>
             <div>
@@ -58,11 +58,11 @@ const Services = () => {
               <h4>MANAGEMENT</h4>
               <h3>Brand Management</h3>
               <p>We help you strengthen and protect the value of your brand.</p>
-              <div className="summaryButtonTwo">
+              {/* <div className="summaryButtonTwo">
                 <button className="myButtonTwo">
                   <BsArrowRight className="icon" />
                 </button>
-              </div>
+              </div> */}
             </div>
           </Col>
           <Col className="d-flex flex-column services p-3" md={4}>
@@ -76,11 +76,11 @@ const Services = () => {
                 We help to achieve new levels of efficiency & cost
                 effectiveness.
               </p>
-              <div className="summaryButtonThree">
+              {/* <div className="summaryButtonThree">
                 <button className="myButtonThree">
                   <BsArrowRight className="icon" />
                 </button>
-              </div>
+              </div> */}
             </div>
           </Col>
         </Row>
