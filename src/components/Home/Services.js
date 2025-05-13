@@ -1,7 +1,5 @@
 import React from "react";
-import Col from "react-bootstrap/col";
-import Row from "react-bootstrap/row";
-import Container from "react-bootstrap/container";
+import { Container, Row, Col } from 'react-bootstrap';
 import { BsArrowRight } from "react-icons/bs";
 import image from "../../Images/image.jpg";
 
