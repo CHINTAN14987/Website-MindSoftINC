@@ -6,7 +6,7 @@ import CardImage2 from "../../Images/CardImage2.png";
 import cardImage3 from "../../Images/cardImage3.png";
 const HomePage = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid-01">
       <Container className="cardContainer">
         <Row className="cardsRow">
           <Col className="cards card1 m-3">
