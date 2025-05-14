@@ -1,0 +1,213 @@
+/* WhoWeAre.css - Responsive styling */
+
+/* Main container styling */
+.whoWeAre-wrapper {
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  /* Heading section styling */
+  .whyChooseUs-headingWrapper {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .whychoose-heading {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .whychoose-heading::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #4a6fa1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .whychoose-subHeading {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+  
+  .whychoose-subHeadingColor {
+    color: #4a6fa1;
+    position: relative;
+  }
+  
+  /* Left column - Image styling */
+  .WhoWeAre-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .WhoWeAre-img:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Right column styling */
+  .whoWeAre-rightrow1 {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #4a6fa1;
+  }
+  
+  /* Service boxes styling */
+  .whoWeAre-rightrow2,
+  .whoWeAre-rightrow3 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .whoWeAre-rightrow2:hover,
+  .whoWeAre-rightrow3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .whoWeAre-imgdiv {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(74, 111, 161, 0.1);
+    border-radius: 50%;
+    padding: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .whoWeAre-imgdiv img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .whoWeAre-rowheading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .whoWeAre-rowcontent {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Animation classes to be used with Framer Motion */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+  
+  .slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .whoWeAre-wrapper {
+      padding: 40px 0;
+    }
+    
+    .whychoose-subHeading {
+      font-size: 30px;
+    }
+    
+    .WhoWeAre-img {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .whoWeAre-wrapper {
+      padding: 30px 0;
+    }
+    
+    .whychoose-heading {
+      font-size: 16px;
+    }
+    
+    .whychoose-subHeading {
+      font-size: 26px;
+    }
+    
+    .whoWeAre-rightrow1 {
+      font-size: 15px;
+    }
+    
+    .whoWeAre-rowheading {
+      font-size: 18px;
+    }
+    
+    .whoWeAre-rowcontent {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .whoWeAre-wrapper {
+      padding: 20px 0;
+    }
+    
+    .whychoose-subHeading {
+      font-size: 22px;
+    }
+    
+    .whoWeAre-rightrow2,
+    .whoWeAre-rightrow3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .whoWeAre-imgdiv {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
