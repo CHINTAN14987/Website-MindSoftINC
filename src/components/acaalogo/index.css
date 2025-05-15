@@ -1,0 +1,99 @@
+/* AcaaLogo.css */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateY(40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* Logo sizing */
+  .logo-link {
+    display: block;
+    width: 100%;
+  }
+  
+  .logo-link svg {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjust for navbar size */
+  }
+  
+  /* SVG elements */
+  .letter {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    fill: url(#textGradient);
+    filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.6));
+  }
+  
+  .tech {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    fill: #3b82f6;
+    filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.7));
+  }
+  
+  #A1 {
+    animation: slideIn 0.7s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+  
+  #C {
+    animation: slideIn 0.7s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+  
+  #A2 {
+    animation: slideIn 0.7s ease-out 0.5s forwards;
+    opacity: 0;
+  }
+  
+  #A3 {
+    animation: slideIn 0.7s ease-out 0.7s forwards;
+    opacity: 0;
+  }
+  
+  .technologies {
+    animation: fadeIn 1s ease-out 1.2s forwards;
+    opacity: 0;
+  }
+  
+  .circle {
+    fill: none;
+    stroke: url(#circleGradient);
+    stroke-width: 2;
+    stroke-dasharray: 754;
+    stroke-dashoffset: 754;
+    animation: dash 2s ease-in-out forwards 0.5s, pulse 4s infinite ease-in-out 2.5s;
+  }
+  
+  .rotate-circle {
+    transform-origin: 400px 200px;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .pulse-circle {
+    transform-origin: 400px 200px;
+    animation: pulse 4s infinite ease-in-out alternate;
+  }

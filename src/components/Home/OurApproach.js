@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { Code, Smartphone, Cloud, Brain, Settings } from "lucide-react";
+import { Code, Smartphone, Cloud, Brain, Settings, Glasses, ScanEye } from "lucide-react";
 import "../../Style/OurApproach.css";
 
 const OurApproach = () => {
@@ -45,8 +45,17 @@ const OurApproach = () => {
         "We fine-tune large AI models using your custom data, enabling personalized, domain-specific AI solutions for smarter automation.",
       icon: <Settings size={36} />,
       color: "#560bad"
+    },
+    {
+      id: "06",
+      heading: "AR/VR Development",
+      context:
+        "We craft immersive Augmented and Virtual Reality experiences for education, training, retail, and gaming, using cutting-edge 3D and spatial technologies.",
+        icon: <ScanEye size={36} />,      
+        color: "#b5179e"
     }
   ];
+  
 
   return (
     <section className="our-approach-section">

@@ -342,25 +342,28 @@ const EnhancedHeroSection = () => {
         <div className="hero-background">
           <canvas ref={canvasRef} className="particle-canvas"></canvas>
           
-          <motion.svg 
-            className="hero-svg" 
+          <svg 
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 800" 
-            preserveAspectRatio="xMidYMid slice"
-            initial="hidden"
-            animate={isLoaded ? "visible" : "hidden"}
-          >
+            preserveAspectRatio="xMidYMid slice">
             <defs>
               <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#3a7bd5" />
-                <stop offset="100%" stopColor="#3a6073" />
+                <stop offset="0%" stop-color="#1a0b35" />
+                <stop offset="25%" stop-color="#2d1654" />
+                <stop offset="50%" stop-color="#47267a" />
+                <stop offset="75%" stop-color="#34103e" />
+                <stop offset="100%" stop-color="#0e0629" />
               </linearGradient>
               <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#4286f4" />
-                <stop offset="100%" stopColor="#373B44" />
+                <stop offset="0%" stop-color="#1a0b35" />
+                <stop offset="33%" stop-color="#2d1654" />
+                <stop offset="66%" stop-color="#47267a" />
+                <stop offset="100%" stop-color="#34103e" />
               </linearGradient>
               <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#00c6ff" />
-                <stop offset="100%" stopColor="#4286f4" />
+                <stop offset="0%" stop-color="#2d1654" />
+                <stop offset="50%" stop-color="#47267a" />
+                <stop offset="100%" stop-color="#0e0629" />
               </linearGradient>
               <filter id="glow">
                 <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -371,61 +374,76 @@ const EnhancedHeroSection = () => {
               </filter>
             </defs>
             
-            <rect x="0" y="0" width="100%" height="100%" fill="#f8f9fa" />
+            <rect x="0" y="0" width="100%" height="100%" fill="#0e0629" />
             
-            {/* Wave paths */}
-            <motion.path
+            <path
               d="M0,192L48,213.3C96,235,192,277,288,277.3C384,277,480,235,576,213.3C672,192,768,192,864,213.3C960,235,1056,277,1152,277.3C1248,277,1344,235,1392,213.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
               fill="url(#gradient1)"
-              opacity="0.7"
-              variants={pathVariants}
-            />
+              opacity="0.7">
+              <animate 
+                attributeName="d" 
+                dur="10s" 
+                repeatCount="indefinite"
+                values="
+                  M0,192L48,213.3C96,235,192,277,288,277.3C384,277,480,235,576,213.3C672,192,768,192,864,213.3C960,235,1056,277,1152,277.3C1248,277,1344,235,1392,213.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
+                  M0,160L48,181.3C96,203,192,245,288,245.3C384,245,480,203,576,181.3C672,160,768,160,864,181.3C960,203,1056,245,1152,245.3C1248,245,1344,203,1392,181.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
+                  M0,192L48,213.3C96,235,192,277,288,277.3C384,277,480,235,576,213.3C672,192,768,192,864,213.3C960,235,1056,277,1152,277.3C1248,277,1344,235,1392,213.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                keyTimes="0; 0.5; 1"
+              />
+            </path>
             
-            <motion.path
+            <path
               d="M0,96L48,128C96,160,192,224,288,245.3C384,267,480,245,576,208C672,171,768,117,864,117.3C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
               fill="url(#gradient2)"
-              opacity="0.5"
-              variants={pathVariants}
-              transition={{ delay: 0.2 }}
-            />
+              opacity="0.5">
+              <animate 
+                attributeName="d" 
+                dur="15s" 
+                repeatCount="indefinite"
+                values="
+                  M0,96L48,128C96,160,192,224,288,245.3C384,267,480,245,576,208C672,171,768,117,864,117.3C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
+                  M0,64L48,96C96,128,192,192,288,213.3C384,235,480,213,576,176C672,139,768,85,864,85.3C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z;
+                  M0,96L48,128C96,160,192,224,288,245.3C384,267,480,245,576,208C672,171,768,117,864,117.3C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                keyTimes="0; 0.5; 1"
+              />
+            </path>
             
-            <motion.path
+            <path
               d="M0,64L40,90.7C80,117,160,171,240,192C320,213,400,203,480,176C560,149,640,107,720,112C800,117,880,171,960,197.3C1040,224,1120,224,1200,208C1280,192,1360,160,1400,144L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
               fill="url(#gradient3)"
-              opacity="0.3"
-              variants={pathVariants}
-              transition={{ delay: 0.4 }}
-            />
-            
-            {/* Accent lighting points */}
-            {isLoaded && [
-              { cx: 300, cy: 120, r: 4 },
-              { cx: 600, cy: 180, r: 5 },
-              { cx: 900, cy: 150, r: 4 },
-              { cx: 1200, cy: 180, r: 3 }
-            ].map((point, i) => (
-              <motion.circle 
-                key={i}
-                cx={point.cx}
-                cy={point.cy}
-                r={point.r}
-                fill="#ffffff"
-                filter="url(#glow)"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ 
-                  opacity: [0.7, 1, 0.7], 
-                  scale: [1, 1.5, 1],
-                  r: [point.r, point.r + 1, point.r]
-                }}
-                transition={{ 
-                  delay: 0.8 + i * 0.2,
-                  duration: 3,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
+              opacity="0.3">
+              <animate 
+                attributeName="d" 
+                dur="20s" 
+                repeatCount="indefinite"
+                values="
+                  M0,64L40,90.7C80,117,160,171,240,192C320,213,400,203,480,176C560,149,640,107,720,112C800,117,880,171,960,197.3C1040,224,1120,224,1200,208C1280,192,1360,160,1400,144L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z;
+                  M0,32L40,58.7C80,85,160,139,240,160C320,181,400,171,480,144C560,117,640,75,720,80C800,85,880,139,960,165.3C1040,192,1120,192,1200,176C1280,160,1360,128,1400,112L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z;
+                  M0,64L40,90.7C80,117,160,171,240,192C320,213,400,203,480,176C560,149,640,107,720,112C800,117,880,171,960,197.3C1040,224,1120,224,1200,208C1280,192,1360,160,1400,144L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+                keyTimes="0; 0.5; 1"
               />
-            ))}
-          </motion.svg>
+            </path>
+            
+            <circle cx="300" cy="120" r="4" fill="#a985eb" filter="url(#glow)">
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+              <animate attributeName="r" values="4;5;4" dur="3s" repeatCount="indefinite" />
+            </circle>
+            
+            <circle cx="600" cy="180" r="5" fill="#9678d3" filter="url(#glow)">
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="0.5s" repeatCount="indefinite" />
+              <animate attributeName="r" values="5;6;5" dur="3s" begin="0.5s" repeatCount="indefinite" />
+            </circle>
+            
+            <circle cx="900" cy="150" r="4" fill="#8e6fdd" filter="url(#glow)">
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="1s" repeatCount="indefinite" />
+              <animate attributeName="r" values="4;5;4" dur="3s" begin="1s" repeatCount="indefinite" />
+            </circle>
+            
+            <circle cx="1200" cy="180" r="3" fill="#b492f5" filter="url(#glow)">
+              <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" begin="1.5s" repeatCount="indefinite" />
+              <animate attributeName="r" values="3;4;3" dur="3s" begin="1.5s" repeatCount="indefinite" />
+            </circle>
+          </svg>
         </div>
 
         <div className="hero-content-container">
