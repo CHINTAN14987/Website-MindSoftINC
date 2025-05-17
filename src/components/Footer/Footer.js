@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { GoLocation } from 'react-icons/go';
 import { MdWifiCalling3, MdKeyboardArrowRight } from 'react-icons/md';
 import { FaGithub, FaEnvelope, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaReact, FaDatabase, FaServer, FaMobileAlt, FaCloudUploadAlt, FaRobot } from "react-icons/fa";
 import { HiCode, HiSparkles, HiCursorClick } from 'react-icons/hi';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -77,29 +78,6 @@ const Footer = () => {
                 Mobile App Development, CRM Development and Creative Design services.
               </p>
               
-              <div className="footer-heading mt-3">CONTACT US</div>
-              <div className="footer-card">
-                <div className="footerCard-top">
-                  <div className="footerCard-address">
-                    Address- B-19 Gurugram - 212343
-                  </div>
-                  <div>
-                    <GoLocation />
-                  </div>
-                </div>
-
-                <div className="footerCard-bottom">
-                  <div className="footerCard-bottom-text">
-                    Talk To Our Support <br />
-                    <b>+91 981-720-4593</b>
-                  </div>
-                  <div>
-                    <MdWifiCalling3 />
-                  </div>
-                </div>
-                <div className="footerCard-email">info@ACAA.com</div>
-              </div>
-              
               <div className="footer-cube-container">
                 <div className="footer-cube">
                   <div className="face front"><HiCode /></div>
@@ -155,7 +133,7 @@ const Footer = () => {
           
           <Col md={3}>
             <div>
-              <div className="footer-heading">NEWSLETTER</div>
+              {/* <div className="footer-heading">NEWSLETTER</div>
               <p className="footer-description">
                 Sign up today for hints, tips and the latest product news
               </p>
@@ -166,26 +144,99 @@ const Footer = () => {
                   className="newsletter-input"
                 />
                 <button className="newsletter-button">Subscribe</button>
-              </div>
+              </div> */}
               
-              <div className="footer-heading mt-4">FOLLOW US ON</div>
-              <div className="social-icons-container">
-                <a href="https://github.com/ACAA" target="_blank" rel="noopener noreferrer" className="social-icon github">
-                  <FaGithub />
-                  <span className="social-tooltip">GitHub</span>
-                </a>
-                <a href="mailto:info@ACAA.com" className="social-icon email">
-                  <FaEnvelope />
-                  <span className="social-tooltip">Email Us</span>
-                </a>
-                <a href="https://twitter.com/ACAA" target="_blank" rel="noopener noreferrer" className="social-icon twitter">
-                  <FaTwitter />
-                  <span className="social-tooltip">Twitter</span>
-                </a>
-                <a href="https://linkedin.com/company/ACAA" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
-                  <FaLinkedinIn />
-                  <span className="social-tooltip">LinkedIn</span>
-                </a>
+              <div className="footer-heading">CONTACT US</div>
+              <div className="footer-card">
+                <div className="footerCard-top">
+                  <div className="footerCard-address">
+                    Address- B-19 Gurugram - 212343
+                  </div>
+                  <div>
+                    <GoLocation />
+                  </div>
+                </div>
+
+                <div className="footerCard-bottom">
+                  <div className="footerCard-bottom-text">
+                    Talk To Our Support <br />
+                    <b>+91 981-720-4593</b>
+                  </div>
+                  <div>
+                    <MdWifiCalling3 />
+                  </div>
+                </div>
+                <div className="footerCard-email">info@ACAA.com</div>
+              </div>
+            </div>
+          </Col>
+
+          <Col md={12}>
+            <div style={{
+                display: "flex",
+                justifyContent: "space-between", // Spreads icons evenly
+                alignItems: "center",
+                width: "100%",
+                marginTop: "1rem"
+              }}>
+              <div>
+                <div className="footer-heading mt-4">FOLLOW US ON</div>
+                <div className="social-icons-container" >
+                  <a
+                    href="https://github.com/ACAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon github"
+                  >
+                    <FaGithub />
+                    <span className="social-tooltip">GitHub</span>
+                  </a>
+                  <a href="mailto:info@ACAA.com" className="social-icon email">
+                    <FaEnvelope />
+                    <span className="social-tooltip">Email Us</span>
+                  </a>
+                  <a
+                    href="https://twitter.com/ACAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon twitter"
+                  >
+                    <FaTwitter />
+                    <span className="social-tooltip">Twitter</span>
+                  </a>
+                  <a
+                    href="https://linkedin.com/company/ACAA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-icon linkedin"
+                  >
+                    <FaLinkedinIn />
+                    <span className="social-tooltip">LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="footer-cube-container">
+                <div className="footer-cube">
+                  <div className="face front">
+                    <FaReact />
+                  </div>
+                  <div className="face back">
+                    <FaDatabase />
+                  </div>
+                  <div className="face right">
+                    <FaServer />
+                  </div>
+                  <div className="face left">
+                    <FaMobileAlt />
+                  </div>
+                  <div className="face top">
+                    <FaCloudUploadAlt />
+                  </div>
+                  <div className="face bottom">
+                    <FaRobot />
+                  </div>
+                </div>
               </div>
             </div>
           </Col>
