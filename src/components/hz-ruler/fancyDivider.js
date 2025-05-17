@@ -17,10 +17,10 @@ const FancyDivider = ({ spacing = 60 }) => {
 
   const lineStyle = {
     height: '4px',
-    background: 'linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629)',
+    background: 'white',
     position: 'relative',
     borderRadius: '3px',
-    boxShadow: isHovered ? '0 0 15px rgba(118, 73, 172, 0.7)' : '0 0 5px rgba(118, 73, 172, 0.3)',
+    boxShadow: isHovered ? '0 0 15px rgba(255, 255, 255, 0.7)' : '0 0 5px rgba(255, 255, 255, 0.3)',
     transition: 'all 0.3s ease'
   };
 
@@ -33,7 +33,7 @@ const FancyDivider = ({ spacing = 60 }) => {
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
-    background: 'white'
+    background: 'linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629)'
   };
 
   const iconContainerStyle = {
@@ -42,12 +42,12 @@ const FancyDivider = ({ spacing = 60 }) => {
     justifyContent: 'center',
     padding: '0 5px',
     position: 'absolute',
-    background: 'linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629)',
+    background: 'white',
     borderRadius: '50%',
     width: '48px',
     height: '48px',
-    boxShadow: '0 0 15px rgba(118, 73, 172, 0.6)',
-    border: '3px solid #8c5bc9',
+    boxShadow: '0 0 15px rgba(255, 255, 255, 0.6)',
+    border: '3px solid #d4b8ff',
     zIndex: 2
   };
 
@@ -55,7 +55,7 @@ const FancyDivider = ({ spacing = 60 }) => {
     position: 'absolute',
     width: '60%',
     height: '12px',
-    background: 'white',
+    background: 'linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629)',
     borderRadius: '6px',
     zIndex: 1
   };
@@ -119,17 +119,17 @@ const FancyDivider = ({ spacing = 60 }) => {
               transform: 'translateX(-50%)',
               width: '30px',
               height: '3px',
-              background: '#2d1654',
+              background: 'white',
               borderRadius: '5px',
             }}
           />
         ))}
       </div>
 
-      {/* White background accent for better visual separation */}
+      {/* Gradient background accent for better visual separation */}
       <div style={accentStyle} />
       
-      {/* Main gradient line */}
+      {/* Main white line */}
       <motion.div
         initial={{ width: '0%', opacity: 0 }}
         animate={{ width: '85%', opacity: 1 }}
@@ -159,8 +159,8 @@ const FancyDivider = ({ spacing = 60 }) => {
               width: '8px',
               height: '8px',
               borderRadius: '50%',
-              background: '#8c5bc9',
-              boxShadow: '0 0 8px #8c5bc9'
+              background: 'white',
+              boxShadow: '0 0 8px white'
             }}
           />
         ))}
@@ -178,7 +178,7 @@ const FancyDivider = ({ spacing = 60 }) => {
           initial="initial"
           animate={isHovered ? "hover" : "animate"}
         >
-          <Star color="#d4b8ff" size={24} />
+          <Star color="#47267a" size={24} />
         </motion.div>
       </motion.div>
 
@@ -201,7 +201,7 @@ const FancyDivider = ({ spacing = 60 }) => {
             transition: { duration: 8, repeat: Infinity, ease: "linear" }
           }}
         >
-          <Sparkles color="#d4b8ff" size={16} />
+          <Sparkles color="#47267a" size={16} />
         </motion.div>
       </motion.div>
 
@@ -223,7 +223,7 @@ const FancyDivider = ({ spacing = 60 }) => {
             transition: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
           }}
         >
-          <ArrowDown color="#d4b8ff" size={16} />
+          <ArrowDown color="#47267a" size={16} />
         </motion.div>
       </motion.div>
     </div>

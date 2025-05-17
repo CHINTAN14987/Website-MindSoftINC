@@ -34,7 +34,7 @@ const AboutUsWhoWeAre = () => {
               <span className="AboutUsWhoWeAre-lineIcon">
                 <BsBoxArrowRight />
               </span>
-              <span>
+              <span className="text-white">
                 Our streamlined and optimized processes save you time, effort,
                 and expenses
               </span>
@@ -43,13 +43,13 @@ const AboutUsWhoWeAre = () => {
               <span className="AboutUsWhoWeAre-lineIcon">
                 <BsBoxArrowRight />
               </span>
-              <span>We understand risk management for brands</span>
+              <span className="text-white">We understand risk management for brands</span>
             </div>
             <div className="AboutUsWhoWeAre-line">
               <span className="AboutUsWhoWeAre-lineIcon">
                 <BsBoxArrowRight />
               </span>
-              <span>Our employees are expert and professional</span>
+              <span className="text-white">Our employees are expert and professional</span>
             </div>
           </Col>
         </Row>

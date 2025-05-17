@@ -15,11 +15,11 @@ const Home = () => {
       <WhoWeAre />
       <HoriontalRuler/>
       <SubscriberNewsLetter />
-      <FancyDivider spacing={50}/>
+      <HoriontalRuler/>
       <OurApproach />
-      <FancyDivider spacing={50}/>
+      <HoriontalRuler/>
       <Testimonial />
-      <FancyDivider spacing={50}/>
+      <HoriontalRuler/>
     </div>
   );
 };

@@ -12,6 +12,11 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const isActive = (path) => location.pathname === path;
+  
+  // Check if current path is under services
+  const isServicesActive = () => {
+    return location.pathname.includes("/services");
+  };
 
   // Handle scroll effect
   useEffect(() => {
@@ -64,12 +69,12 @@ const Navbar = () => {
 
         {/* Desktop & Mobile navigation */}
         <div className={`navbar-right ${isOpen ? "open" : ""}`}>
-          <Link 
+          {/* <Link 
             to="/" 
             className={`navbar-item ${isActive("/") ? "active" : ""}`}
           >
             <span className="navbar-item-text">Home</span>
-          </Link>
+          </Link> */}
           
           <Link 
             to="/aboutus" 
@@ -81,23 +86,28 @@ const Navbar = () => {
           {/* Dropdown menu example */}
           <div className="navbar-dropdown">
             <button 
-              className={`navbar-item dropdown-toggle ${isActive("/services") ? "active" : ""}`}
+              className={`navbar-item dropdown-toggle ${isServicesActive() ? "active" : ""}`}
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
               <span className="navbar-item-text">Services</span>
             </button>
             
             <div className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-              <Link to="/services/consulting" className="dropdown-item">
-                Consulting
+              <Link to="/services/web-development" className="dropdown-item">
+                Web Development
               </Link>
-              <Link to="/services/development" className="dropdown-item">
-                Development
+              <Link to="/services/app-development" className="dropdown-item">
+                App Development
               </Link>
-              <Link to="/services/design" className="dropdown-item">
-                Design
+              <Link to="/services/ai-solutions" className="dropdown-item">
+                AI Solutions
               </Link>
+              {/* <Link to="services/ar-vr" className="dropdown-item">
+                AR/VR Solutions
+              </Link> */}
             </div>
+
+
           </div>
           
           <Link 

@@ -51,7 +51,7 @@
 
 .banner-contact-wrapper {
   position: relative;
-  padding: 60px 0;
+  padding: 60px 10%;
   overflow: hidden;
   min-height: 240px;
   display: flex;
@@ -176,7 +176,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0aadeb;
+  background: linear-gradient(to right, #a89aff, #d4b8ff, #c78fff);
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -190,7 +190,8 @@
 }
 
 .consultation-button:hover {
-  background-color: #0899d3;
+  background:linear-gradient(to right, #000000, #4708bd, #0e0629) !important;
+  
   box-shadow: 0 6px 20px rgba(10, 173, 235, 0.4);
 }
 

@@ -16,7 +16,7 @@
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #333;
+    color: white;
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
@@ -28,7 +28,7 @@
     position: absolute;
     width: 50px;
     height: 3px;
-    background-color: #4a6fa1;
+    background-color: linear-gradient(to right, #a89aff, #d4b8ff, #c78fff);
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -37,12 +37,16 @@
   .whychoose-subHeading {
     font-size: 36px;
     font-weight: 800;
-    color: #1a1a1a;
+    color: white;
     margin-bottom: 10px;
   }
   
   .whychoose-subHeadingColor {
-    color: #4a6fa1;
+    background: linear-gradient(to right, #a89aff, #d4b8ff, #c78fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
     position: relative;
   }
   

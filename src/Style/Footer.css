@@ -3,14 +3,14 @@
   position: relative;
   overflow: hidden;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629);
+  background: linear-gradient(to bottom, #000000, #1a0b35, #0e0629);
   padding-top: 4rem;
 }
 
 .footer-background {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629);
+  background: linear-gradient(to bottom, #000000, #1a0b35, #0e0629);
   z-index: 0;
 }
 
@@ -375,7 +375,7 @@
 
 /* Footer copyright section */
 .footer-copyright {
-  background: linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629);
+  background: linear-gradient(to bottom, #000000, #1a0b35, #0e0629);
   padding: 1.5rem 0;
   text-align: center;
   color: #777;

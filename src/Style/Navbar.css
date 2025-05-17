@@ -380,6 +380,7 @@
   
   .dropdown-menu.show {
     margin-top: 0.5rem;
+    background-color: #0e0629;
     margin-bottom: 0.5rem;
   }
   
@@ -388,7 +389,7 @@
   }
   
   .dropdown-item:hover {
-    background-color: transparent;
+    background-color: #0e0629;
     padding-left: 0.5rem;
   }
   

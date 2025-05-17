@@ -1,24 +1,9 @@
 import React from "react";
-import Footer from "./components/Footer/Footer";
-import OurApproach from "./components/Home/OurApproach";
-import Testimonial from "./components/Home/Testimonial";
-import WhoWeAre from "./components/Home/WhoWeAre";
-import ContactUs from "./components/pages/ContactUs";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/pages/Home";
+import Navigations from "./Navigations/Navigations"; // Adjust path if needed
 import "./Style/index.css";
+
 const App = () => {
-  return (
-    <>
-      <Navbar />
-      <Home />
-      <WhoWeAre />
-      <ContactUs />
-      <Testimonial />
-      <OurApproach />
-      <Footer />
-    </>
-  );
+  return <Navigations />;
 };
 
 export default App;

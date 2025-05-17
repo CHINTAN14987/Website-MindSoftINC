@@ -5,11 +5,13 @@ import Footer from "../components/Footer/Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <Outlet />
+      <div style={{ paddingTop: "60px" }}> {/* Adjust value based on navbar height */}
+        <Outlet />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

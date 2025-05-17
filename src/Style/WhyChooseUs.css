@@ -3,7 +3,7 @@
 /* Section Styling */
 .why-choose-us-section {
   padding: 100px 0;
-  background-color: #f9fafc;
+  background-color:linear-gradient(to bottom, #000000, #1a0b35, #0e0629);
   position: relative;
   overflow: hidden;
 }
@@ -191,7 +191,7 @@
 }
 
 .cta-button:hover {
-  background: linear-gradient(45deg, #0aadeb, #0c90c4);
+  background: linear-gradient(to right, #a89aff, #d4b8ff, #c78fff);
   box-shadow: 0 15px 35px rgba(10, 173, 235, 0.3);
 }
 

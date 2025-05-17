@@ -10,13 +10,12 @@ const Aboutus = () => {
   return (
     <div>
       <WhyChooseUs />
-      <FancyDivider spacing={50}/>
+      <HoriontalRuler />
       <BannerContactUs />
-      <FancyDivider spacing={50}/>
+      <HoriontalRuler />
       <AboutUsWhoWeAre />
-      <FancyDivider spacing={50}/>
+      <HoriontalRuler />
       <Testimonial />
-      <FancyDivider spacing={50}/>
     </div>
   );
 };

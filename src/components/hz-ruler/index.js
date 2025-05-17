@@ -26,7 +26,7 @@ const FancyDivider = () => {
 
   const containerStyle = {
     width: '100%',
-    padding: '10px 0',
+    padding: '25px 0',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
