@@ -1,0 +1,193 @@
+/* Container styles */
+.floating-container {
+  min-height: 100vh;
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Background gradient */
+.floating-background {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(to bottom right, #1f2937, black, #1f1f1f); */
+}
+
+/* Button wrapper */
+.floating-button-wrapper {
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  z-index: 50;
+}
+
+/* Base button */
+.floating-button {
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform-origin: bottom center;
+}
+
+/* Button states */
+.floating-button.collapsed {
+  width: 18rem;
+  height: 4rem;
+  transform: translateY(0);
+}
+
+.floating-button.expanded {
+  width: 20rem;
+  min-height: 16rem;
+  transform: translateY(-200px);
+  border-radius: 24px !important;
+}
+
+/* Button colors */
+.bg-card-1 {
+  background-color: var(--card-bg-1)
+}
+.bg-card-2 {
+  background-color: var(--card-bg-2)
+}
+.bg-card-3 {
+  background-color: var(--card-bg-3)
+}
+.bg-card-4 {
+  background-color: var(--card-bg-4)
+}
+.bg-card-5 {
+  background-color: var(--card-bg-5)
+}
+.text-black {
+  color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Compact inner content */
+.button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  height: 4rem;
+  transition: opacity 0.3s;
+  order: 2;
+}
+
+.button-inner.visible {
+  opacity: 1;
+}
+
+.button-inner.hidden {
+  opacity: 0;
+}
+
+/* Expanded content */
+.button-hover-content {
+  padding: 1.5rem;
+  transition: all 0.5s ease-out;
+  order: 1;
+  opacity: 0;
+  height: 0;
+  flex: 0;
+}
+
+.button-hover-content.visible {
+  opacity: 1;
+  flex: 1;
+  height: auto;
+}
+
+.button-hover-content h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.button-hover-content img {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.button-hover-content p {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  background-color: currentColor;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.action-button {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.action-button button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.action-button button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Floating particles */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}

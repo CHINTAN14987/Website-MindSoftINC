@@ -169,7 +169,7 @@ const AppDevelopmentPage = () => {
     <div className="app-development-page">
       {/* Hero Section */}
       <motion.section 
-        className="hero-section"
+        // className="hero-section"
         initial="hidden"
         animate="visible"
         variants={fadeIn}

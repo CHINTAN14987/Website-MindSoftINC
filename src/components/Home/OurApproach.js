@@ -168,7 +168,7 @@ const ServiceCard = ({ service, index }) => {
       <div className="card-content">
         <motion.div 
           className="icon-container" 
-          style={{ backgroundColor: `${service.color}15` }}
+          style={{ backgroundColor: "#fff" }}
           variants={iconVariants}
           initial="hidden"
           animate={controls}
@@ -190,7 +190,7 @@ const ServiceCard = ({ service, index }) => {
         <h3 className="service-title">{service.heading}</h3>
         <p className="service-description">{service.context}</p>
         
-        <motion.div 
+        {/* <motion.div 
           className="hover-overlay"
           whileHover={{ 
             opacity: 1,
@@ -212,7 +212,7 @@ const ServiceCard = ({ service, index }) => {
               </svg>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );

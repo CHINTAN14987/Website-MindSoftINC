@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Code, Palette, Zap } from "lucide-react";
-import "../../Style/WHOweAre.css";
+import "../../Style/WhoWeAre.css";
 import whoWeAre from "../../Images/whoWeAre.png";
 
 const WhoWeAre = () => {

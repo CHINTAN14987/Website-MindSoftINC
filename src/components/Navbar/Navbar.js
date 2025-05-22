@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className="navbar-container">
       <div className="navbar-logo">
           {/* Replace the SVG with our AcaaLogo component */}
-          <AcaaLogo />
+          {/* <AcaaLogo /> */}
         </div>
 
 
@@ -94,13 +94,13 @@ const Navbar = () => {
             
             <div className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
               <Link to="/services/web-development" className="dropdown-item">
-                Web Development
+                {/* Web Development */} One
               </Link>
               <Link to="/services/app-development" className="dropdown-item">
-                App Development
+                {/* App Development */} two
               </Link>
               <Link to="/services/ai-solutions" className="dropdown-item">
-                AI Solutions
+                {/* AI Solutions */} three
               </Link>
               {/* <Link to="services/ar-vr" className="dropdown-item">
                 AR/VR Solutions

@@ -16,7 +16,7 @@
   text-align: left;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #6d7a8c;
+  color: #fff;
 }
 
 .whoWeAre-rightrow2 {
@@ -39,17 +39,22 @@
   width: 68px;
   padding-right: 15px;
 }
+.whoWeAre-imgdiv svg{
+stroke:var(--primary-background-color) !important
+}
 .whoWeAre-rowheading {
   font-size: 24px;
   line-height: 20px;
   font-weight: 700;
+  color: var(--primary-dynamic-color);
+  padding-bottom: 1rem;
 }
 .whoWeAre-rowcontent {
   margin-bottom: 15px;
   margin-top: 5px;
   font-size: 16px;
   line-height: 1.7;
-  color: #6d7a8c;
+  color: #fff;
   font-weight: 400;
 }
 

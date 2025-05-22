@@ -4,7 +4,8 @@
 .our-approach-section {
   padding: 120px 0;
   position: relative;
-  overflow: hidden;background: #0e0629;
+  overflow: hidden;
+  /* background: #0e0629; */
 }
 
 .our-approach-section::before {
@@ -32,9 +33,9 @@
 .section-subtitle {
   display: inline-block;
   padding: 4px 14px;
-  background: rgba(137, 100, 235, 0.2);
   border-radius: 100px;
-  color: #a89aff;
+  color: var(--primary-dynamic-color) !important;
+  border:2px solid var(--primary-dynamic-color);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -48,10 +49,16 @@
   color: #ffffff;
   margin-bottom: 18px;
   line-height: 1.2;
+  background: linear-gradient(to right,  #fff,  var(--primary-background-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  position: relative;
 }
 
 .section-title .highlight {
-  background: linear-gradient(to right, #a89aff, #d4b8ff, #c78fff);
+  background: linear-gradient(to right,  #fff, var(--primary-background-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -98,17 +105,15 @@
 .service-card {
   height: 100%;
   border-radius: 16px;
-  background-color: #ffffff;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  background-color: #000;
+  border: 1px solid var(--primary-dynamic-color);
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, scale 0.4s ease;
+
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
+
 
 .card-content {
   padding: 40px 30px;
@@ -158,13 +163,13 @@
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #1a202c;
+  color: #fff;
 }
 
 .service-description {
   font-size: 16px;
   line-height: 1.6;
-  color: #64748b;
+  color: #fff;
   margin-bottom: 0;
 }
 
@@ -186,9 +191,16 @@
   transition: opacity 0.3s ease;
 }
 
-.service-card:hover .hover-overlay {
-  opacity: 1;
-  pointer-events: auto;
+.service-card:hover  {
+  border-color: var(--primary-background-color);
+  border-width: 2px;
+  background: linear-gradient(20deg, #000000 54.08%, var(--primary-dynamic-color) 88.65%);
+  transform: scale(1.02) !important;
+  cursor: pointer;
+}
+.service-card:hover .icon-container {
+  background-color: var(--primary-background-color) !important;
+  transition: background-color 0.3s ease;
 }
 
 .overlay-content {
