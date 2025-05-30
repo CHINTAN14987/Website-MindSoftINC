@@ -165,23 +165,7 @@ const ContactUs = () => {
                     <span>B-19 4th-Floor, Gurugram</span>
                   </div>
                 </div>
-                <div className="contact-social">
-                  <h4>Follow Us</h4>
-                  <div className="social-icons">
-                    <a href="#" className="social-icon">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" className="social-icon">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" className="social-icon">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" className="social-icon">
-                      <i className="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
+                
               </motion.div>
             </Col>
             <Col lg={7} md={12}>
