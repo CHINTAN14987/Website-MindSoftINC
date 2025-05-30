@@ -514,7 +514,7 @@ const ServicesPage = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: radial-gradient(ellipse at 50% 50%, rgba(25, 33, 100, 0.2) 0%, rgba(15, 5, 36, 0.8) 90%);
+          background: #000;
           z-index: 1;
         }
 
@@ -530,7 +530,7 @@ const ServicesPage = () => {
           font-size: 3.5rem;
           font-weight: 700;
           margin-bottom: 1.5rem;
-          background: linear-gradient(135deg, #4a9dff 0%, #9747FF 100%);
+          background: #FFFFFF;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -541,18 +541,18 @@ const ServicesPage = () => {
           font-size: 1.25rem;
           line-height: 1.7;
           margin-bottom: 2rem;
-          color: rgba(255, 255, 255, 0.9);
+          color: #FFFFFF;
         }
 
         .services-hero-badge {
           display: inline-block;
-          background: rgba(255, 255, 255, 0.1);
+          background: #000;
           backdrop-filter: blur(10px);
           border-radius: 2rem;
           padding: 0.5rem 1.5rem;
           font-weight: 500;
-          color: #4a9dff;
-          border: 1px solid rgba(74, 157, 255, 0.3);
+          color: #FFFFFF;
+          border: 1px solid #FFFFFF;
         }
 
         .hero-particles {
@@ -587,14 +587,14 @@ const ServicesPage = () => {
           transform: translateX(-50%);
           width: 80px;
           height: 4px;
-          background: linear-gradient(90deg, #4a9dff, #9747FF);
+          background: #ffffff;
           border-radius: 2px;
         }
 
         /* Achievements Section */
         .achievements-section {
           padding: 5rem 2rem;
-          background: rgba(20, 10, 50, 0.8);
+          background: #000;
         }
 
         .achievements-container {
@@ -606,19 +606,19 @@ const ServicesPage = () => {
         }
 
         .achievement-card {
-          background: rgba(255, 255, 255, 0.05);
+          background: #000;
           backdrop-filter: blur(10px);
           border-radius: 10px;
           padding: 2rem;
           text-align: center;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid #FFFFFF;
         }
 
         .achievement-card:hover {
           transform: translateY(-10px);
           box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-          border-color: rgba(74, 157, 255, 0.3);
+          border-color: #FFFFFF;
         }
 
         .achievement-icon {
@@ -640,14 +640,14 @@ const ServicesPage = () => {
         }
 
         .achievement-card p {
-          color: rgba(255, 255, 255, 0.7);
+          color: #ffffff;
           font-size: 0.9rem;
         }
 
         /* Services Intro Section */
         .services-intro {
           padding: 6rem 2rem;
-          background: linear-gradient(135deg, #0c0320 0%, #190d42 100%);
+          background: #000;
         }
 
         .services-intro-content {
@@ -666,7 +666,7 @@ const ServicesPage = () => {
           font-size: 1.1rem;
           line-height: 1.7;
           margin-bottom: 2.5rem;
-          color: rgba(255, 255, 255, 0.8);
+          color: #ffffff;
         }
 
         .expertise-highlights {
@@ -680,16 +680,17 @@ const ServicesPage = () => {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          background: rgba(255, 255, 255, 0.05);
+          background: #000;
           padding: 0.5rem 1rem;
+          border:1px solid #ffffff;
           border-radius: 20px;
-          color: #4a9dff;
+          color: #ffffff;
         }
 
         /* Service Categories Section */
         .service-categories {
           padding: 6rem 2rem;
-          background: linear-gradient(135deg, #0f0626 0%, #251355 100%);
+          background: #000;
         }
 
         .service-tabs {
@@ -701,12 +702,12 @@ const ServicesPage = () => {
         }
 
         .service-tab {
-          background: rgba(255, 255, 255, 0.03);
+          background: #000;
           border-radius: 10px;
           padding: 2rem;
           cursor: pointer;
           transition: all 0.3s ease;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid #ffffff;
           height: 100%;
         }
 
@@ -810,7 +811,7 @@ const ServicesPage = () => {
         /* Timeline Section */
         .timeline-section {
           padding: 6rem 2rem;
-          background: linear-gradient(135deg, #0c041f 0%, #1e114d 100%);
+          background: #000;
         }
 
         .timeline {
@@ -826,7 +827,7 @@ const ServicesPage = () => {
           bottom: 0;
           left: 50%;
           width: 4px;
-          background: linear-gradient(to bottom, rgba(74, 157, 255, 0.3), rgba(151, 71, 255, 0.3));
+          background: #ffffff;
           transform: translateX(-50%);
         }
 
@@ -847,10 +848,10 @@ const ServicesPage = () => {
         }
 
         .timeline-content {
-          background: rgba(255, 255, 255, 0.03);
+          {/* background: rgba(255, 255, 255, 0.03); */}
           border-radius: 10px;
           padding: 1.5rem;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid #ffffff;
           position: relative;
         }
 
@@ -859,7 +860,7 @@ const ServicesPage = () => {
           position: absolute;
           width: 20px;
           height: 20px;
-          background: linear-gradient(135deg, #4a9dff 0%, #9747FF 100%);
+          background: #ffffff;
           border-radius: 50%;
           top: 25px;
         }
@@ -889,7 +890,7 @@ const ServicesPage = () => {
         }
 
         .timeline-content p {
-          color: rgba(255, 255, 255, 0.7);
+          color: #ffffff;
           font-size: 0.9rem;
           line-height: 1.6;
         }
@@ -897,7 +898,7 @@ const ServicesPage = () => {
         /* Tech Stack Section */
         .tech-stack-section {
           padding: 6rem 2rem;
-          background: linear-gradient(135deg, #0e0425 0%, #1b0e49 100%);
+          background: #000;
         }
 
         .tech-cloud {
@@ -911,11 +912,11 @@ const ServicesPage = () => {
           padding: 2rem;
           background: rgba(255, 255, 255, 0.02);
           border-radius: 20px;
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border: 1px solid #ffffff;
         }
 
         .tech-item {
-          color: rgba(255, 255, 255, 0.7);
+          color: #ffffff !important;
           transition: all 0.3s ease;
           padding: 0.5rem 1rem;
           cursor: default;
@@ -924,7 +925,7 @@ const ServicesPage = () => {
         /* CTA Section */
         .cta-section {
           padding: 8rem 2rem;
-          background: linear-gradient(135deg, #0c0322 0%, #1e0f54 100%);
+          background: #000;
           text-align: center;
         }
 
@@ -943,7 +944,7 @@ const ServicesPage = () => {
           font-size: 1.1rem;
           line-height: 1.7;
           margin-bottom: 3rem;
-          color: rgba(255, 255, 255, 0.8);
+          color: #ffffff;
         }
 
         .cta-buttons {
@@ -964,8 +965,8 @@ const ServicesPage = () => {
         }
 
         .btn.primary {
-          background: linear-gradient(135deg, #4a9dff 0%, #9747FF 100%);
-          color: white;
+          border:1px solid #ffffff;
+          color: #000;
         }
 
         .btn.primary:hover {

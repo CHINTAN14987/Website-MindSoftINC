@@ -233,7 +233,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>10+ Years of App Development Expertise</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             Since 2013, we've been crafting exceptional mobile experiences for businesses across industries
           </motion.p>
           
@@ -272,7 +272,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>Our App Development Services</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             End-to-end mobile application development solutions tailored to your business needs
           </motion.p>
           
@@ -312,7 +312,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>Technology Expertise</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             Our extensive experience across modern mobile development technologies
           </motion.p>
           
@@ -349,7 +349,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>Our Development Process</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             A refined approach honed over a decade of successful app deliveries
           </motion.p>
           
@@ -443,7 +443,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>Featured App Projects</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             Explore some of our most successful mobile applications
           </motion.p>
           
@@ -511,7 +511,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>Client Success Stories</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             Hear from businesses we've helped achieve their mobile app goals
           </motion.p>
           
@@ -561,7 +561,7 @@ const AppDevelopmentPage = () => {
         <div className="container">
           <motion.h2 variants={fadeIn}>Why Choose ACAR Technologies</motion.h2>
           <div className="divider"></div>
-          <motion.p variants={fadeIn} className="section-subtitle">
+          <motion.p variants={fadeIn} className="section-subtitle-01">
             What sets our app development services apart after a decade in the industry
           </motion.p>
           
@@ -644,8 +644,8 @@ const AppDevelopmentPage = () => {
       <style jsx>{`
         .app-development-page {
           font-family: 'Inter', sans-serif;
-          color: #f8f9fa;
-          background: linear-gradient(135deg, #1e0d2d 0%, #2a1a41 100%);
+          color: #ffffff;
+          background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
           overflow: hidden;
         }
 
@@ -673,7 +673,7 @@ const AppDevelopmentPage = () => {
         }
 
         .highlight {
-          color: #4cc9f0;
+          color: #ffffff;
           position: relative;
           display: inline-block;
         }
@@ -683,7 +683,7 @@ const AppDevelopmentPage = () => {
           position: absolute;
           width: 100%;
           height: 0.2rem;
-          background: #f72585;
+          background: #666666;
           bottom: -0.3rem;
           left: 0;
         }
@@ -691,19 +691,19 @@ const AppDevelopmentPage = () => {
         .divider {
           height: 4px;
           width: 60px;
-          background: linear-gradient(90deg, #f72585, #4cc9f0);
+          background: linear-gradient(90deg, #333333, #666666);
           margin: 0 auto 2rem;
           border-radius: 2px;
         }
 
-        .section-subtitle {
+        .section-subtitle-01 {
           display: flex;
           justify-content: center;
           text-align: center;
           font-size: 1.2rem;
           max-width: 700px;
           margin: 0 auto 3rem;
-          color: #d1d1e1;
+          color: #cccccc;
         }
 
         section {
@@ -716,7 +716,7 @@ const AppDevelopmentPage = () => {
           min-height: 90vh;
           display: flex;
           align-items: center;
-          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="3" cy="3" r="3" fill="%234cc9f0" opacity="0.1"/></svg>') repeat;
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="3" cy="3" r="3" fill="%23ffffff" opacity="0.1"/></svg>') repeat;
           position: relative;
           padding-top: 2rem;
         }
@@ -739,7 +739,7 @@ const AppDevelopmentPage = () => {
           font-size: 1.25rem;
           line-height: 1.6;
           margin-bottom: 2.5rem;
-          color: #d1d1e1;
+          color: #cccccc;
         }
 
         .hero-image {
@@ -762,10 +762,10 @@ const AppDevelopmentPage = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: #2a2a2a;
+          background: #1a1a1a;
           border-radius: 36px;
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-          border: 10px solid #111;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+          border: 10px solid #000;
           overflow: hidden;
         }
 
@@ -775,7 +775,7 @@ const AppDevelopmentPage = () => {
           left: 10px;
           right: 10px;
           bottom: 10px;
-          background: linear-gradient(135deg, #7209b7, #3a0ca3);
+          background: linear-gradient(135deg, #333333, #111111);
           border-radius: 28px;
           overflow: hidden;
         }
@@ -786,7 +786,7 @@ const AppDevelopmentPage = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800"><rect x="20" y="40" width="360" height="60" rx="10" fill="white" opacity="0.2"/><rect x="20" y="120" width="150" height="150" rx="10" fill="white" opacity="0.15"/><rect x="190" y="120" width="190" height="70" rx="10" fill="white" opacity="0.15"/><rect x="190" y="200" width="190" height="70" rx="10" fill="white" opacity="0.15"/><rect x="20" y="290" width="360" height="1" fill="white" opacity="0.1"/></svg>');
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800"><rect x="20" y="40" width="360" height="60" rx="10" fill="white" opacity="0.3"/><rect x="20" y="120" width="150" height="150" rx="10" fill="white" opacity="0.2"/><rect x="190" y="120" width="190" height="70" rx="10" fill="white" opacity="0.2"/><rect x="190" y="200" width="190" height="70" rx="10" fill="white" opacity="0.2"/><rect x="20" y="290" width="360" height="1" fill="white" opacity="0.15"/></svg>');
         }
 
         .code-particles {
@@ -795,7 +795,7 @@ const AppDevelopmentPage = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800"><circle cx="50" cy="200" r="4" fill="%234cc9f0"/><circle cx="120" cy="150" r="3" fill="%234cc9f0"/><circle cx="200" cy="250" r="5" fill="%23f72585"/><circle cx="280" cy="180" r="4" fill="%23f72585"/><circle cx="330" cy="220" r="3" fill="%234cc9f0"/><circle cx="100" cy="300" r="4" fill="%23f72585"/><circle cx="220" cy="380" r="5" fill="%234cc9f0"/><circle cx="320" cy="350" r="3" fill="%23f72585"/><circle cx="150" cy="450" r="4" fill="%234cc9f0"/><circle cx="250" cy="500" r="3" fill="%23f72585"/></svg>');
+          background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="800" viewBox="0 0 400 800"><circle cx="50" cy="200" r="4" fill="%23ffffff"/><circle cx="120" cy="150" r="3" fill="%23cccccc"/><circle cx="200" cy="250" r="5" fill="%23888888"/><circle cx="280" cy="180" r="4" fill="%23666666"/><circle cx="330" cy="220" r="3" fill="%23ffffff"/><circle cx="100" cy="300" r="4" fill="%23999999"/><circle cx="220" cy="380" r="5" fill="%23bbbbbb"/><circle cx="320" cy="350" r="3" fill="%23777777"/><circle cx="150" cy="450" r="4" fill="%23ffffff"/><circle cx="250" cy="500" r="3" fill="%23aaaaaa"/></svg>');
         }
 
         .orbital-elements {
@@ -809,7 +809,7 @@ const AppDevelopmentPage = () => {
 
         .tech-orbit {
           position: absolute;
-          border: 1px dashed rgba(76, 201, 240, 0.3);
+          border: 1px dashed rgba(255, 255, 255, 0.3);
           border-radius: 50%;
         }
 
@@ -831,15 +831,15 @@ const AppDevelopmentPage = () => {
           position: absolute;
           width: 12px;
           height: 12px;
-          background: #4cc9f0;
+          background: #ffffff;
           border-radius: 50%;
           top: 0;
           transform: translateX(150px);
-          box-shadow: 0 0 15px rgba(76, 201, 240, 0.8);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
         }
 
         .cta-button {
-          background: linear-gradient(90deg, #f72585, #7209b7);
+          background: linear-gradient(90deg, #333333, #666666);
           color: white;
           border: none;
           border-radius: 30px;
@@ -848,7 +848,7 @@ const AppDevelopmentPage = () => {
           font-weight: 600;
           cursor: pointer;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 20px rgba(247, 37, 133, 0.3);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
 
         .cta-button.large {
@@ -858,7 +858,8 @@ const AppDevelopmentPage = () => {
 
         .cta-button:hover {
           transform: translateY(-2px);
-          box-shadow: 0 7px 25px rgba(247, 37, 133, 0.4);
+          box-shadow: 0 7px 25px rgba(0, 0, 0, 0.7);
+          background: linear-gradient(90deg, #444444, #777777);
         }
 
         .achievements-grid {
@@ -879,17 +880,17 @@ const AppDevelopmentPage = () => {
 
         .achievement-icon {
           margin-bottom: 1rem;
-          color: #4cc9f0;
+          color: #ffffff;
         }
 
         .achievement-card h3 {
           font-size: 2.5rem;
-          color: #f72585;
+          color: #cccccc;
           margin-bottom: 0.5rem;
         }
 
         .achievement-card p {
-          color: #d1d1e1;
+          color: #aaaaaa;
           font-size: 1rem;
         }
 
@@ -910,19 +911,24 @@ const AppDevelopmentPage = () => {
           height: 100%;
         }
 
+        .service-card:hover {
+          background: rgba(255, 255, 255, 0.08);
+          transform: translateY(-2px);
+        }
+
         .service-icon-wrapper {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 60px;
           height: 60px;
-          background: linear-gradient(135deg, rgba(247, 37, 133, 0.2), rgba(76, 201, 240, 0.2));
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
           border-radius: 50%;
           margin-bottom: 1.5rem;
         }
 
         .service-icon {
-          color: #4cc9f0;
+          color: #ffffff;
         }
 
         .service-card h3 {
@@ -931,13 +937,13 @@ const AppDevelopmentPage = () => {
         }
 
         .service-card p {
-          color: #d1d1e1;
+          color: #cccccc;
           font-size: 1rem;
           line-height: 1.6;
         }
 
         .tech-stack-section {
-          background: rgba(26, 13, 39, 0.6);
+          background: rgba(0, 0, 0, 0.3);
         }
 
         .tech-grid {
@@ -956,6 +962,11 @@ const AppDevelopmentPage = () => {
           transition: all 0.3s ease;
         }
 
+        .tech-card:hover {
+          background: rgba(255, 255, 255, 0.1);
+          transform: translateY(-2px);
+        }
+
         .tech-card h4 {
           font-size: 1.2rem;
           margin-bottom: 0.7rem;
@@ -963,7 +974,7 @@ const AppDevelopmentPage = () => {
 
         .experience-badge {
           display: inline-block;
-          background: linear-gradient(90deg, #f72585, #7209b7);
+          background: linear-gradient(90deg, #333333, #666666);
           color: white;
           padding: 0.3rem 0.8rem;
           border-radius: 20px;
@@ -987,7 +998,7 @@ const AppDevelopmentPage = () => {
           bottom: 0;
           left: 50%;
           width: 4px;
-          background: linear-gradient(to bottom, #f72585, #4cc9f0);
+          background: linear-gradient(to bottom, #666666, #ffffff);
           transform: translateX(-50%);
         }
 
@@ -1013,7 +1024,7 @@ const AppDevelopmentPage = () => {
           left: 50%;
           width: 50px;
           height: 50px;
-          background: linear-gradient(135deg, #f72585, #7209b7);
+          background: linear-gradient(135deg, #333333, #666666);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -1023,7 +1034,7 @@ const AppDevelopmentPage = () => {
           font-size: 1.2rem;
           transform: translateX(-50%);
           z-index: 2;
-          box-shadow: 0 0 20px rgba(247, 37, 133, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
         .process-content {
@@ -1038,17 +1049,17 @@ const AppDevelopmentPage = () => {
         .process-content h3 {
           margin-bottom: 0.7rem;
           font-size: 1.3rem;
-          color: #4cc9f0;
+          color: #ffffff;
         }
 
         .process-content p {
-          color: #d1d1e1;
+          color: #cccccc;
           font-size: 1rem;
           line-height: 1.6;
         }
 
         .portfolio-section {
-          background: rgba(26, 13, 39, 0.4);
+          background: rgba(0, 0, 0, 0.2);
         }
 
         .portfolio-grid {
@@ -1070,26 +1081,31 @@ const AppDevelopmentPage = () => {
           flex-direction: column;
         }
 
+        .portfolio-card:hover {
+          background: rgba(255, 255, 255, 0.08);
+          transform: translateY(-2px);
+        }
+
         .portfolio-icon {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 70px;
           height: 70px;
-          background: linear-gradient(135deg, rgba(247, 37, 133, 0.15), rgba(76, 201, 240, 0.15));
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
           border-radius: 50%;
           margin-bottom: 1.5rem;
-          color: #4cc9f0;
+          color: #ffffff;
         }
 
         .portfolio-card h3 {
           margin-bottom: 1rem;
           font-size: 1.3rem;
-          color: #f8f9fa;
+          color: #ffffff;
         }
 
         .portfolio-card p {
-          color: #d1d1e1;
+          color: #cccccc;
           font-size: 1rem;
           line-height: 1.6;
           margin-bottom: 1.5rem;
@@ -1104,19 +1120,19 @@ const AppDevelopmentPage = () => {
         .portfolio-tech {
           margin-bottom: 0.7rem;
           font-size: 0.9rem;
-          color: #d1d1e1;
+          color: #cccccc;
         }
 
         .portfolio-platforms strong,
         .portfolio-tech strong {
-          color: #4cc9f0;
+          color: #ffffff;
           margin-right: 0.3rem;
         }
 
         .view-project-btn {
           background: transparent;
-          color: #4cc9f0;
-          border: 1px solid #4cc9f0;
+          color: #ffffff;
+          border: 1px solid #ffffff;
           border-radius: 30px;
           padding: 0.6rem 1.5rem;
           font-size: 0.9rem;
@@ -1127,7 +1143,7 @@ const AppDevelopmentPage = () => {
         }
 
         .view-project-btn:hover {
-          background: rgba(76, 201, 240, 0.1);
+          background: rgba(255, 255, 255, 0.1);
         }
 
         .view-all-container {
@@ -1174,12 +1190,13 @@ const AppDevelopmentPage = () => {
 
         .quote-icon {
           margin-bottom: 1rem;
+          color: #ffffff;
         }
 
         .testimonial-text {
           font-size: 1rem;
           line-height: 1.7;
-          color: #d1d1e1;
+          color: #cccccc;
           margin-bottom: 2rem;
           font-style: italic;
         }
@@ -1192,10 +1209,11 @@ const AppDevelopmentPage = () => {
           font-weight: 700;
           font-size: 1.1rem;
           margin-bottom: 0.3rem;
+          color: #ffffff;
         }
 
         .author-position {
-          color: #b1b1d1;
+          color: #aaaaaa;
           font-size: 0.9rem;
         }
 
@@ -1204,8 +1222,12 @@ const AppDevelopmentPage = () => {
           gap: 0.3rem;
         }
 
+        .star {
+          color: #ffffff;
+        }
+
         .why-us-section {
-          background: rgba(26, 13, 39, 0.6);
+          background: rgba(0, 0, 0, 0.3);
         }
 
         .benefits-grid {
@@ -1227,7 +1249,7 @@ const AppDevelopmentPage = () => {
         .benefit-icon {
           width: 40px;
           height: 40px;
-          background: rgba(76, 201, 240, 0.1);
+          background: rgba(255, 255, 255, 0.1);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -1236,7 +1258,7 @@ const AppDevelopmentPage = () => {
         }
 
         .check-icon {
-          color: #4cc9f0;
+          color: #ffffff;
         }
 
         .benefit-card h3 {
@@ -1245,17 +1267,19 @@ const AppDevelopmentPage = () => {
         }
 
         .benefit-card p {
-          color: #d1d1e1;
+          color: #cccccc;
           font-size: 1rem;
           line-height: 1.6;
         }
+
         .cta-section {
-          background: linear-gradient(90deg, rgba(247, 37, 133, 0.1), rgba(76, 201, 240, 0.1));
+          background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
           text-align: center;
           padding: 5rem 0;
           margin-top: 3rem;
           border-radius: 10px;
           backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .cta-content h2 {
@@ -1266,7 +1290,7 @@ const AppDevelopmentPage = () => {
         .cta-content p {
           margin-bottom: 2.5rem;
           font-size: 1.2rem;
-          color: #d1d1e1;
+          color: #cccccc;
           max-width: 600px;
           margin-left: auto;
           margin-right: auto;

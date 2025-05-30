@@ -1,0 +1,122 @@
+
+/* Container styles */
+.floating-container {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Button wrapper */
+  .floating-button-wrapper {
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+    z-index: 50;
+  }
+  
+  /* Base button */
+  .floating-button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform-origin: bottom center;
+  }
+  
+  /* Collapsed state */
+  .floating-button.collapsed {
+    width: 18rem;
+    height: 4rem;
+    transform: translateY(0);
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Expanded state */
+  .floating-button.expanded {
+    width: 400px;
+    height: 450px;
+    transform: translateY(-200px);
+    border-radius: 24px !important;
+    position: relative;
+    z-index: 100;
+  }
+  .floating-0{
+  border: 2px solid var(--card-bg-1);
+  }
+  .floating-1{
+    border: 2px solid var(--card-bg-2);
+  }
+  .floating-2{
+    border: 2px solid var(--card-bg-3);
+  }
+  .floating-3{
+    border: 2px solid var(--card-bg-4);
+  }
+  .floating-4{
+    border: 2px solid var(--card-bg-5);
+  }
+  .Arrow{
+    font-size: 2.5rem;
+  }
+  /* Arrow circle in collapsed state */
+  .arrow-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Text colors */
+  .text-black { color: black; }
+  .text-white { color: white; }
+  
+  /* Compact button text */
+  .button-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    height: 4rem;
+    transition: opacity 0.3s;
+    order: 2;
+  }
+  
+  .button-inner.visible { opacity: 1; }
+  
+  /* Expanded container border */
+  .expanded-container {
+  
+  
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Expanded video fills container */
+  .expanded-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 1rem;
+    z-index: 1000;
+  }
+  
+  /* Color backgrounds */
+  .bg-card-1 { --card-color: var(--card-bg-1); background-color: var(--card-bg-1); }
+  .bg-card-2 { --card-color: var(--card-bg-2); background-color: var(--card-bg-2); }
+  .bg-card-3 { --card-color: var(--card-bg-3); background-color: var(--card-bg-3); }
+  .bg-card-4 { --card-color: var(--card-bg-4); background-color: var(--card-bg-4); }
+  .bg-card-5 { --card-color: var(--card-bg-5); background-color: var(--card-bg-5); }
+  

@@ -175,7 +175,7 @@ const AIServicesPage = () => {
         variants={staggerContainer}
       >
         <motion.h2 variants={fadeIn}>Our AI Development <span className="highlight">Expertise</span></motion.h2>
-        <motion.p variants={fadeIn} className="section-subtitle">
+        <motion.p variants={fadeIn} className="section-subtitle-01">
           We leverage the latest AI technologies to build custom solutions that deliver real business value
         </motion.p>
 
@@ -468,7 +468,7 @@ const AIServicesPage = () => {
         variants={staggerContainer}
       >
         <motion.h2 variants={fadeIn}>Our AI <span className="highlight">Technology Stack</span></motion.h2>
-        <motion.p variants={fadeIn} className="section-subtitle">
+        <motion.p variants={fadeIn} className="section-subtitle-01">
           We leverage cutting-edge frameworks and tools to build robust AI solutions
         </motion.p>
 
@@ -507,7 +507,7 @@ const AIServicesPage = () => {
         variants={staggerContainer}
       >
         <motion.h2 variants={fadeIn}>Our Development <span className="highlight">Process</span></motion.h2>
-        <motion.p variants={fadeIn} className="section-subtitle">
+        <motion.p variants={fadeIn} className="section-subtitle-01">
           We follow a structured approach to deliver AI solutions that exceed expectations
         </motion.p>
 
