@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import whoWeAre from "../../Images/whoWeAre.png";
-import "../../Style/WhoWeAre.css";
+
 import { BsBoxArrowRight } from "react-icons/bs";
 import "../../Style/AboutUsWhoWeAre.css";
 const AboutUsWhoWeAre = () => {

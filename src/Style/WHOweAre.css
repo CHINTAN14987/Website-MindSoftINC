@@ -42,7 +42,7 @@
   }
   
   .whychoose-subHeadingColor {
-    background: linear-gradient(to right, #a89aff, #d4b8ff, #c78fff);
+    background: linear-gradient(to right, var(--primary-background-color), var(--primary-dynamic-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -67,12 +67,13 @@
   .whoWeAre-rightrow1 {
     font-size: 16px;
     line-height: 1.8;
-    color: #555;
+    color: #fff;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #000;
     border-radius: 8px;
-    border-left: 4px solid #4a6fa1;
+    border-left: 6px solid #fff !important;
+    border: 1px solid #fff;
   }
   
   /* Service boxes styling */
@@ -82,8 +83,13 @@
     align-items: flex-start;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
+    border-left: 6px solid #fff !important;
+    border: 1px solid #fff;
     border-radius: 8px;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
   }
@@ -101,12 +107,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(74, 111, 161, 0.1);
+
     border-radius: 50%;
     padding: 12px;
     transition: all 0.3s ease;
   }
-  
+  .whoWeAre-imgdiv svg{
+    fill: #fff;
+    stroke: #fff;
+  }
   .whoWeAre-imgdiv img {
     width: 100%;
     height: auto;
@@ -115,14 +124,14 @@
   .whoWeAre-rowheading {
     font-size: 20px;
     font-weight: 700;
-    color: #333;
+    color: #fff;
     margin-bottom: 10px;
   }
   
   .whoWeAre-rowcontent {
     font-size: 15px;
     line-height: 1.6;
-    color: #666;
+    color: #fff;
   }
   
   /* Animation classes to be used with Framer Motion */

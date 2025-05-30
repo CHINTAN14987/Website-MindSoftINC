@@ -1,256 +1,147 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { motion, AnimatePresence } from "framer-motion";
-import { Quote, ChevronLeft, ChevronRight, Star, Users, Award } from "lucide-react";
-import "../../Style/Testimonial.css";
+import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+import "../../Style/Testimonial.css"; // Import the CSS file
 
-// Sample testimonial data - replace with your actual data
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    company: "Tech Innovations Inc.",
-    image: "/path/to/sarah-image.jpg",
-    rating: 5,
-    text: "Working with ACAA transformed our business operations. Their dedication to quality and customer satisfaction is unmatched in the industry. Highly recommended for any business looking to scale.",
-    position: "CEO"
+    name: "Charles",
+    text: "Amazing work!",
+    position: "Founder",
+    company: "Flying Secoya",
   },
   {
     id: 2,
-    name: "David Miller",
-    company: "Global Solutions",
-    image: "/path/to/david-image.jpg",
-    rating: 5,
-    text: "ACAA's team delivered beyond our expectations. Their attention to detail and commitment to excellence has made them our go-to partner for all our projects.",
-    position: "Director of Operations"
+    name: "Gaëlle",
+    text: "Very efficient!",
+    position: "UX Researcher",
+    company: "Google",
   },
   {
     id: 3,
-    name: "Emily Chang",
-    company: "Innovative Startups",
-    image: "/path/to/emily-image.jpg",
-    rating: 5,
-    text: "I've worked with many agencies, but ACAA stands out for their professionalism and results-driven approach. They truly understand our needs and deliver exceptional quality.",
-    position: "Founder"
-  }
+    name: "Elvira",
+    text: "Met all deadlines.",
+    position: "Office Manager",
+    company: "Only.Pro",
+
+  },
+  {
+    id: 4,
+    name: "Daniel",
+    text: "Very professional!",
+    position: "CTO",
+    company: "NextGen Labs",
+    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face",
+  },
+  {
+    id: 5,
+    name: "Maya",
+    text: "Loved working together.",
+    position: "Creative Director",
+    company: "VisionX",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop&crop=face",
+  },
 ];
 
 const Testimonial = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoplay, setIsAutoplay] = useState(true);
-  const [direction, setDirection] = useState(1); // 1 for right, -1 for left
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasTransitioned, setHasTransitioned] = useState(false);
+  const ref = useRef(null);
+  const [hoverId, setHoverId] = useState(2);
 
-  // Autoplay functionality
   useEffect(() => {
-    let interval;
-    
-    if (isAutoplay) {
-      interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => 
-          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-        );
-      }, 5000); // Change testimonial every 5 seconds
-    }
-    
-    return () => clearInterval(interval);
-  }, [isAutoplay]);
-
-  // Handle next testimonial
-  const nextTestimonial = () => {
-    setIsAutoplay(false);
-    setDirection(1);
-    setCurrentIndex((prevIndex) => 
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  // Handle previous testimonial
-  const prevTestimonial = () => {
-    setIsAutoplay(false);
-    setDirection(-1);
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
-  };
-
-  // Variants for Framer Motion animations
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { 
-      opacity: 1,
-      transition: { 
-        staggerChildren: 0.3 
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
       }
-    }
-  };
+    }, { threshold: 0 });
 
-  const testimonialVariants = {
-    enter: (direction) => ({
-      x: direction > 0 ? 300 : -300,
-      opacity: 0
-    }),
-    center: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 30
-      }
-    },
-    exit: (direction) => ({
-      x: direction > 0 ? -300 : 300,
-      opacity: 0,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 30
-      }
-    })
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { 
-      y: 0, 
-      opacity: 1,
-      transition: {
-        duration: 0.5
-      }
-    }
-  };
-
-  // Render star ratings
-  const renderStars = (rating) => {
-    const stars = [];
-    for (let i = 0; i < rating; i++) {
-      stars.push(<Star key={i} className="star-icon" size={18} fill="#FFD700" color="#FFD700" />);
-    }
-    return stars;
-  };
+    if (ref.current) observer.observe(ref.current);
+    return () => {
+      if (ref.current) observer.unobserve(ref.current);
+    };
+  }, []);
 
   return (
-    <div className="testimonial-section">
-      <Container>
-        <Row className="align-items-center">
-          <Col lg={5} md={12} className="testimonial-content">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={containerVariants}
-              className="testimonial-left-content"
-            >
-              <motion.div className="testimonial-badge" variants={itemVariants}>
-                <Users size={18} className="testimonial-badge-icon" />
-                <span>CLIENT TESTIMONIALS</span>
-              </motion.div>
-              
-              <motion.h2 className="testimonial-title" variants={itemVariants}>
-                What Our <span className="highlight">Clients Say</span> About Our Services
-              </motion.h2>
-              
-              <motion.p className="testimonial-description" variants={itemVariants}>
-                Discover why businesses trust ACAA for their most critical projects. Our commitment to excellence and client satisfaction drives everything we do.
-              </motion.p>
-              
-              <motion.div className="testimonial-stats" variants={itemVariants}>
-                <div className="stat-item">
-                  <span className="stat-number">98%</span>
-                  <span className="stat-label">Satisfaction Rate</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">250+</span>
-                  <span className="stat-label">Happy Clients</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">10+</span>
-                  <span className="stat-label">Years of Excellence</span>
-                </div>
-              </motion.div>
-              
-              <motion.div className="testimonial-credentials" variants={itemVariants}>
-                <Award size={20} className="credential-icon" />
-                <span>Certified Excellence</span>
-              </motion.div>
-            </motion.div>
-          </Col>
-          
-          <Col lg={7} md={12} className="testimonial-carousel-container">
-            <div className="testimonial-carousel">
-              <AnimatePresence custom={direction} initial={false} mode="wait">
-                <motion.div
-                  key={currentIndex}
-                  custom={direction}
-                  variants={testimonialVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  className="testimonial-card"
-                >
-                  <div className="quote-icon-container">
-                    <Quote size={40} className="quote-icon" />
-                  </div>
-                  
-                  <div className="testimonial-rating">
-                    {renderStars(testimonials[currentIndex].rating)}
-                  </div>
-                  
-                  <p className="testimonial-text">
-                    "{testimonials[currentIndex].text}"
-                  </p>
-                  
-                  <div className="testimonial-author">
-                    <div className="author-image-container">
-                      <div 
-                        className="author-image" 
-                        style={{ backgroundImage: `url(${testimonials[currentIndex].image})` }}
-                      ></div>
-                    </div>
-                    <div className="author-info">
-                      <h4 className="author-name">{testimonials[currentIndex].name}</h4>
-                      <p className="author-position">
-                        {testimonials[currentIndex].position}, {testimonials[currentIndex].company}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-              
-              <div className="testimonial-controls">
-                <button 
-                  className="control-btn prev-btn" 
-                  onClick={prevTestimonial}
-                  aria-label="Previous testimonial"
-                >
-                  <ChevronLeft size={24} />
-                </button>
-                <div className="testimonial-indicators">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      className={`indicator ${index === currentIndex ? 'active' : ''}`}
-                      onClick={() => {
-                        setIsAutoplay(false);
-                        setCurrentIndex(index);
-                      }}
-                      aria-label={`Go to testimonial ${index + 1}`}
-                    ></button>
-                  ))}
-                </div>
-                <button 
-                  className="control-btn next-btn" 
-                  onClick={nextTestimonial}
-                  aria-label="Next testimonial"
-                >
-                  <ChevronRight size={24} />
-                </button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <>
+      <motion.div
+        layout
+        className={isVisible ? "horizontal-scroll-layout" : "fullscreen-layout"}
+        transition={{
+          layout: { duration: 1.6, ease: [0.25, 0.8, 0.25, 1] }
+        }}
+        onLayoutAnimationComplete={() => {
+          if (isVisible) setTimeout(() => setHasTransitioned(true), 300);
+        }}
+      >
+        {isVisible ? (
+          testimonials.map((t, i) => (
+            <Card
+              key={t.id}
+              t={t}
+              layoutId={t.id === 2 ? "main" : undefined}
+              transitioning={t.id === hoverId && !hasTransitioned}
+              setHoverId={setHoverId}
+            />
+          ))
+        ) : (
+          <Card
+            t={testimonials[1]}
+            layoutId="main"
+            large
+            transitioning
+            animateOnMount
+          />
+        )}
+      </motion.div>
+
+      <div ref={ref} className="invisible-trigger" />
+    </>
+  );
+};
+
+const Card = ({
+  t,
+  layoutId,
+  large = false,
+  transitioning = false,
+  animateOnMount = false,
+  setHoverId
+}) => {
+  return (
+    <motion.div
+      layout
+      layoutId={layoutId}
+      className={`card ${large ? "large" : ""} ${transitioning ? "transitioning" : ""}`}
+      initial={animateOnMount ? { scale: 0.95, opacity: 0 } : false}
+      animate={{
+        scale: 1,
+        opacity: 1,
+        transition: {
+          duration: 1.2,
+          ease: [0.25, 0.8, 0.25, 1],
+        },
+      }}
+      style={{
+        transformOrigin: 'center',
+      }}
+      onMouseEnter={() => {
+        setHoverId && setHoverId(t.id);
+      }}
+      onMouseLeave={() => {
+        setHoverId && setHoverId(-1);
+      }}
+    >
+      <img src={t.image} alt={t.name} className="avatar" />
+      <h3>{t.name}</h3>
+      <p>"{t.text}"</p>
+      <p>{t.position} – {t.company}</p>
+      <div className="rating">
+        <Star fill="#4ade80" />
+        <span>5/5</span>
+      </div>
+    </motion.div>
   );
 };
 

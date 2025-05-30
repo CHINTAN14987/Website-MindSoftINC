@@ -56,7 +56,7 @@
   min-height: 240px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to bottom, #000000, #1a0b35, #0e0629);;;
+  background: #000;
   background-size: 400% 400%;
   animation: gradient-animation 15s ease infinite;
 }

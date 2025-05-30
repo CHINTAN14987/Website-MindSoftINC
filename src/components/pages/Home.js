@@ -28,9 +28,9 @@ const Home = () => {
 <AnimatedSection delay={0.1}>
         <ImageSlider />
       </AnimatedSection> 
-      <div style={{ position: "relative", height: "100vh" }}>
+      <div style={{ position: "relative", height: "100vh"}}>
         <Waves
-          lineColor="#636363"
+          lineColor="rgba(255, 255, 255, 0.1)"
           backgroundColor="#000"
           waveSpeedX={0.02}
           waveSpeedY={0.01}
@@ -41,10 +41,16 @@ const Home = () => {
           maxCursorMove={120}
           xGap={12}
           yGap={36}
+          
         />
-        <div style={{ position: "absolute", width: "100%" }}>
+         <motion.div
+          style={{ position: "absolute", width: "100%", zIndex: 2 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }} // Adjust delay as needed
+        >
           <FloatingButtons />
-        </div>
+        </motion.div>
       </div>
       <AnimatedSection delay={0.3}>
    
@@ -58,21 +64,21 @@ const Home = () => {
         <WhoWeAre />
       </AnimatedSection>
 
-<AnimatedSection delay={0.7}>
+<AnimatedSection delay={0.5}>
         <SubscriberNewsLetter />
       </AnimatedSection> 
 
 
 
-       <AnimatedSection delay={0.9}>
+       <AnimatedSection delay={0.5}>
         <OurApproach />
       </AnimatedSection> 
 
 
 
-      {/* <AnimatedSection delay={0.9}>
+       {/* <AnimatedSection delay={0.5}>
         <Testimonial />
-      </AnimatedSection> */}
+      </AnimatedSection>  */}
 
   
     </div>

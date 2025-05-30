@@ -10,12 +10,10 @@ const Aboutus = () => {
   return (
     <div>
       <WhyChooseUs />
-      <HoriontalRuler />
       <BannerContactUs />
-      <HoriontalRuler />
       <AboutUsWhoWeAre />
-      <HoriontalRuler />
-      <Testimonial />
+      {/* <HoriontalRuler /> */}
+      {/* <Testimonial /> */}
     </div>
   );
 };

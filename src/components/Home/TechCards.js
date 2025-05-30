@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "../../Style/techCards.css";
 import aiVideo from "../../assets/svg/AI.mp4";
@@ -59,6 +59,12 @@ const FloatingButtons = () => {
     }
   };
 
+  useEffect(()=>{
+    return ()=>{
+      console.log("hello")
+      setHoveredButton(-1)
+    }
+  },[])
   return (
     <div className="floating-container">
       {buttons.map((button, index) => (

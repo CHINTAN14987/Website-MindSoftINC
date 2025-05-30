@@ -7,9 +7,14 @@ import Layout from "../Layout/Layout";
 import WebDevelopment from "../components/Services/WebDevelopment";
 import AppDevelopment from "../components/Services/AppDevelopment";
 import AISolutions from "../components/Services/AISolutions";
+import ScrollToTop from "../components/Scroll";
 
 const Navigations = () => {
   return (
+
+
+   <>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
@@ -19,7 +24,7 @@ const Navigations = () => {
         <Route path="services/app-development" element={<AppDevelopment />} />
         <Route path="services/ai-solutions" element={<AISolutions />} />
       </Route>
-    </Routes>
+    </Routes></>
   );
 };
 

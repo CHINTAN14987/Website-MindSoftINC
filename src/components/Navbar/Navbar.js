@@ -64,7 +64,7 @@ const Navbar = () => {
     <div className={`navbar-wrapper ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src={logoSvg} alt="Logo" />
+          {/* <img src={logoSvg} alt="Logo" /> */}
         </div>
 
         <button
@@ -76,6 +76,14 @@ const Navbar = () => {
         </button>
 
         <div className={`navbar-right ${isOpen ? "open" : ""}`}>
+
+        <Link
+            to="/"
+            className={`navbar-item ${isActive("/") ? "active" : ""}`}
+          >
+            <span className="navbar-item-text">Home</span>
+          </Link>
+
           <Link
             to="/aboutus"
             className={`navbar-item ${isActive("/aboutus") ? "active" : ""}`}
@@ -93,7 +101,7 @@ const Navbar = () => {
               <span className="navbar-item-text">Services</span>
             </button>
 
-            <div className={`glass-dropdown-alt ${dropdownOpen ? "open" : ""}`}>
+         {dropdownOpen &&    <div className={`glass-dropdown-alt ${dropdownOpen ? "open" : ""}`}>
               <Link 
                 to="/services/web-development" 
                 className="dropdown-item"
@@ -101,13 +109,12 @@ const Navbar = () => {
               >
                 <div
                   className="service-card-alt"
-                  style={{ backgroundColor: "#6066ee" }}
+                
                 >
                   <div className="outer">
                     <h3>Web Development</h3>
                     <p>
                       Craft unique digital experiences for modern audiences.
-                      <br />
                       Elevate your brand with cutting-edge designs.
                     </p>
                   </div>
@@ -122,14 +129,13 @@ const Navbar = () => {
               >
                 <div
                   className="service-card-alt"
-                  style={{ backgroundColor: "#8ddd8d" }}
+                
                 >
                   <div className="outer">
                     <h3>App Development</h3>
                     <p>
                       Build innovative mobile apps that resonate with your
                       audience.
-                      <br />
                       From concept to launch, we craft secure, high-performance
                       solutions.
                     </p>
@@ -145,20 +151,18 @@ const Navbar = () => {
               >
                 <div
                   className="service-card-alt"
-                  style={{ backgroundColor: "#ff6b6b" }}
                 >
                   <div className="outer">
                     <h3>AI Solutions</h3>
                     <p>
                       Leverage artificial intelligence to transform your business.
-                      <br />
                       Smart automation and data-driven insights for growth.
                     </p>
                   </div>
                   <div className="arrow-icon">→</div>
                 </div>
               </Link>
-            </div>
+            </div>}
           </div>
 
           <Link
