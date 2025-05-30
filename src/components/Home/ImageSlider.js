@@ -30,9 +30,7 @@ const EnhancedHeroSection = () => {
   return (
     <div className="hero_container">
 
-      <p>
-      Our company is one of the among leading web and mobile application development companies, which has worldwide popularity. A website adds credibility to your business and of course, the customization of the website enhances the user experience. Our consistency with every project helps us maintaining the standard. We are specialized in delivering the customized solution and responsive performance
-      </p>
+     
     
       <div className="hero_component">
       <motion.div
@@ -79,6 +77,9 @@ const EnhancedHeroSection = () => {
         />
       </motion.div>
     </div>
+    <p>
+      Our company is one of the among leading web and mobile application development companies, which has worldwide popularity. A website adds credibility to your business and of course, the customization of the website enhances the user experience. Our consistency with every project helps us maintaining the standard. We are specialized in delivering the customized solution and responsive performance
+      </p>
     </div>
   
   );
