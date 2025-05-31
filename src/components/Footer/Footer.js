@@ -35,7 +35,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer-outerWrapper">
+    <>
+    <footer className="footer-outerWrapper" style={{height: "50%"}} >
       {/* Glowing gradient background */}
       <div className="footer-background"></div>
       
@@ -65,7 +66,6 @@ const Footer = () => {
         </div>
       )}
 
-      <Container>
         {/* Decorative top border */}
         <div className="glow-border"></div>
         
@@ -241,13 +241,14 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
-      </Container>
       
-      {/* Bottom section with copyright */}
-      <div className="footer-copyright">
-        Copyright © {currentYear} ACAA, All Rights Reserved.
-      </div>
+      
     </footer>
+    {/* Bottom section with copyright */}
+    <div className="footer-copyright">
+    Copyright © {currentYear} ACAA, All Rights Reserved.
+  </div>
+  </>
   );
 };
 

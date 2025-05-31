@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    position: relative;
-    top: -120px;
+    /* position: relative;
+    top: -120px; */
     
 }
 .hero-left{
@@ -14,11 +14,23 @@
 }
 
 .last_point{
-    position: relative;
-    top: 120px;
+    /* position: relative;
+    top: 120px; */
+    margin-bottom: 3rem;
    
 }
+.hero_front{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+display: flex;
+justify-content: center;
+width: 90%;
+margin: auto;
 
+}
 .hero_right_con{
     width: 600px;
     height: 500px;

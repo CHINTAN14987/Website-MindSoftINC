@@ -8,6 +8,7 @@ import WhoWeAre from "../Home/WhoWeAre";
 import HoriontalRuler from "../hz-ruler";
 import Waves from "../waves/Waves";
 import FloatingButtons from "../Home/TechCards";
+import Hyperspeed from "../hyperSpeed";
 
 const AnimatedSection = ({ children, delay = 0 }) => (
   <motion.div
@@ -26,6 +27,8 @@ const Home = () => {
 
 
 <AnimatedSection delay={0.1}>
+
+
         <ImageSlider />
       </AnimatedSection> 
       <div style={{ position: "relative", height: "100vh"}}>
