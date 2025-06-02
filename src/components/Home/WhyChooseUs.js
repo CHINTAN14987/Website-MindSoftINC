@@ -60,7 +60,7 @@ const ServiceCard = ({ icon, title, description, index }) => {
     animate={controls}
     variants={cardVariants}
     whileHover={{ 
-      y: -15, 
+ 
       scale: 1.02,
       transition: { duration: 0.3, ease: "easeOut" }
     }}
@@ -210,7 +210,7 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="row justify-content-center mt-3">
-          <div className="col-12 text-center">
+          {/* <div className="col-12 text-center">
             <motion.button 
               className="cta-button"
               initial="hidden"
@@ -225,7 +225,7 @@ const WhyChooseUs = () => {
               <span>SAY HELLO TO US</span>
               <div className="button-shine"></div>
             </motion.button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -345,6 +345,7 @@ const WhyChooseUs = () => {
             0 0 0 1px rgba(255, 255, 255, 0.05);
           backdrop-filter: blur(10px);
           cursor: pointer;
+          display:block;
         }
 
         .service-card::before {

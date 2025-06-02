@@ -116,10 +116,10 @@ const WhoWeAre = () => {
                   />
                 </div>
                 <div className="service-content">
-                  <h3 className={`service-title ${hoveredIcon !== null ? 'active' : ''}`}>
+                  <h3 className={`service-title cardvisiblity ${hoveredIcon !== null ? 'active' : ''}`}>
                     {currentService.title}
                   </h3>
-                  <p className={`service-description ${hoveredIcon !== null ? 'active' : ''}`}>
+                  <p className={`service-description cardvisiblity ${hoveredIcon !== null ? 'active' : ''}`}>
                     {currentService.description}
                   </p>
                 </div>

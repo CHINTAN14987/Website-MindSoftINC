@@ -315,7 +315,11 @@
   .navbar-wrapper {
     height: var(--navbar-mobile-height);
   }
-  
+  .glass-dropdown-alt{
+    top: -7rem !important;
+    z-index: 100 !important;
+    right: 18rem
+  }
   .mobile-menu-button {
     display: flex;
   }
@@ -325,12 +329,13 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    top: var(--navbar-mobile-height);
+    /* top: var(--navbar-mobile-height); */
+    top: 95px;
     right: 0;
     width: 100%;
     height: 0;
     overflow: hidden;
-    background: linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629);
+    background: linear-gradient(to right, #000000,  #0e0629);
     transition: height var(--transition-speed) ease;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -338,10 +343,11 @@
   }
   
   .navbar-right.open {
-    height: calc(100vh - var(--navbar-mobile-height));
+    /* height: calc(100vh - var(--navbar-mobile-height)); */
+    height: 19rem;
     padding: 2rem;
     opacity: 1;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
   
   .navbar-item {
@@ -367,8 +373,12 @@
     width: 100%;
     justify-content: space-between;
     padding: 0.75rem 0;
+
   }
   
+  .dropdown-toggle span{
+    font-weight: 600;
+  }
   .dropdown-menu {
     position: static;
     width: 100%;
@@ -421,12 +431,29 @@
 }
 
 
+@media (max-width: 1400px) {
+.service-card-alt .outer p, .arrow-icon{
+display: none
+}
+.service-card-alt{
+  height: fit-content !important;
+  width: fit-content !important;
+  border:none !important
+}
+.glass-dropdown-alt{
+  flex-direction: column;
+  gap: 0 !important;
+  right: 10% !important;
+}
+}
+
 .glass-dropdown-alt {
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
   display: flex;
   gap: 1rem;
+
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1); /* make it a little lighter */
   backdrop-filter: blur(12px); /* This line enables the blur */
@@ -435,7 +462,9 @@
   z-index: 9999;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
-
+.dropdown-toggle{
+  padding: 4px 8px;
+}
 
 .service-card-alt {
   display: flex;

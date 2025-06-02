@@ -218,13 +218,14 @@ const FloatingButtons = () => {
   }, []);
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className="floating_button_container">
       {buttons.map((button, index) => {
         const isHovered = hoveredButton === index;
         
         return (
           <div
             key={index}
+            className="floating_button"
             style={styles.buttonWrapper(button, index, isHovered)}
           >
             <div

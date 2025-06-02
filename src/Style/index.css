@@ -545,9 +545,23 @@ body {
   }
 }
 
+
+
+
 @media (max-width: 900px) {
   .tech-cards-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .floating_button{
+    position: static !important;
+    
+  }
+  .floating_button_container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1056,4 +1070,4 @@ body {
   .legal-link {
     color: #333;
   }
-}
+} 
