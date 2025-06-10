@@ -843,9 +843,17 @@ const ServicesPage = () => {
         }
 
         .timeline-item.right {
-          left: 50%;
-          text-align: left;
-        }
+            left: 50%;
+            text-align: left;
+          }
+
+          @media (max-width: 768px) {
+            .timeline-item.right {
+              left: auto;
+              text-align: left; /* Optional: keep this or adjust */
+            }
+          }
+
 
         .timeline-content {
           {/* background: rgba(255, 255, 255, 0.03); */}
@@ -966,7 +974,7 @@ const ServicesPage = () => {
 
         .btn.primary {
           border:1px solid #ffffff;
-          color: #000;
+          color: #fff;
         }
 
         .btn.primary:hover {

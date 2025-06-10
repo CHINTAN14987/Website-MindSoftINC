@@ -193,7 +193,12 @@ const AppDevelopmentPage = () => {
           >
             <div className="device-mockup">
               <div className="phone-screen">
-                <div className="app-ui"></div>
+                <img 
+                  src="https://via.placeholder.com/260x520/1a1a1a/ffffff?text=Mobile+App+UI" 
+                  alt="Mobile App Screenshot" 
+                  className="app-screenshot"
+                />
+                <div className="screen-overlay"></div>
                 <motion.div 
                   className="code-particles"
                   animate={pulseAnimation}

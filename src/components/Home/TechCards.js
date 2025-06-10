@@ -1,9 +1,3 @@
-import aiVideo from "../../assets/svg/AI.mp4";
-import webVideo from "../../assets/svg/WEBD.mp4";
-import mobileVideo from "../../assets/svg/APPD.mp4";
-import cloudVideo from "../../assets/svg/Cloud.mp4";  
-import dataVideo from "../../assets/svg/DataAnalytcs.mp4";
-
 import React, { useEffect, useState } from "react";
 
 const FloatingButtons = () => {
@@ -17,7 +11,7 @@ const FloatingButtons = () => {
       position: { left: "15%", top: "50%" },
       gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
       accentColor: "#667eea",
-      video: aiVideo // You'll need to import this at the top
+      video:  "https://myacaabucket.s3.eu-north-1.amazonaws.com/AI.mp4" // You'll need to import this at the top
     },
     {
       text: "Web Development",
@@ -26,7 +20,7 @@ const FloatingButtons = () => {
       position: { left: "40%", top: "70%" },
       gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
       accentColor: "#f093fb",
-      video: webVideo // Replace with actual web dev video
+      video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/WEBD.mp4" // Replace with actual web dev video
     },
     {
       text: "Mobile Apps",
@@ -35,7 +29,7 @@ const FloatingButtons = () => {
       position: { left: "10%", top: "30%" },
       gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       accentColor: "#4facfe",
-      video: mobileVideo // Replace with actual mobile video
+      video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/APPD.mp4" // Replace with actual mobile video
     },
     {
       text: "Cloud Solutions",
@@ -44,7 +38,7 @@ const FloatingButtons = () => {
       position: { left: "75%", top: "30%" },
       gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
       accentColor: "#43e97b",
-      video: cloudVideo // Replace with actual cloud video
+      video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/Cloud.mp4" // Replace with actual cloud video
     },
     {
       text: "Data Analytics",
@@ -53,7 +47,7 @@ const FloatingButtons = () => {
       position: { left: "70%", top: "65%" },
       gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
       accentColor: "#fa709a",
-      video: dataVideo // Replace with actual data video
+      video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/DataAnalytcs.mp4" // Replace with actual data video
     },
   ];
 

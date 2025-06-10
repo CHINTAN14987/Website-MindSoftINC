@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoSvg from "../../Images/logo/logo.svg";
+import logoSvg from "../../assets/svg/logo.jpeg";
 import "../../Style/Navbar.css";
 
 const Navbar = () => {
