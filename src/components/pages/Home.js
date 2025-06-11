@@ -24,14 +24,10 @@ const AnimatedSection = ({ children, delay = 0 }) => (
 const Home = () => {
   return (
     <div>
-
-
-<AnimatedSection delay={0.1}>
-
-
+      <AnimatedSection delay={0.1}>
         <ImageSlider />
-      </AnimatedSection> 
-      <div style={{ position: "relative", height: "100vh"}}>
+      </AnimatedSection>
+      <div style={{ position: "relative", height: "100vh" }}>
         <Waves
           lineColor="rgba(255, 255, 255, 0.1)"
           backgroundColor="#000"
@@ -44,9 +40,8 @@ const Home = () => {
           maxCursorMove={120}
           xGap={12}
           yGap={36}
-          
         />
-         <motion.div
+        <motion.div
           style={{ position: "absolute", width: "100%", zIndex: 2 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,35 +50,21 @@ const Home = () => {
           <FloatingButtons />
         </motion.div>
       </div>
-      <AnimatedSection delay={0.3}>
-   
-      </AnimatedSection>
-      {/* Hero Section with Floating Buttons and Waves */}
-   
 
-      {/* Delayed Reveal Sections */}
-   
-      <AnimatedSection delay={0.5}>
+
+
+      <AnimatedSection delay={0.2}>
         <WhoWeAre />
       </AnimatedSection>
 
-<AnimatedSection delay={0.5}>
+      <AnimatedSection delay={0.1}>
         <SubscriberNewsLetter />
-      </AnimatedSection> 
+      </AnimatedSection>
 
-
-
-       <AnimatedSection delay={0.5}>
         <OurApproach />
-      </AnimatedSection> 
 
 
 
-       {/* <AnimatedSection delay={0.5}>
-        <Testimonial />
-      </AnimatedSection>  */}
-
-  
     </div>
   );
 };
