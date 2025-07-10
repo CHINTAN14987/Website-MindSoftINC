@@ -8,7 +8,7 @@ const FloatingButtons = () => {
       text: "Artificial Intelligence",
       theme: "ai",
       direction: "x",
-      position: { left: "15%", top: "50%" },
+      position: { left: "5%", top: "70%" },
       gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
       accentColor: "#667eea",
       video:  "https://myacaabucket.s3.eu-north-1.amazonaws.com/AI.mp4" // You'll need to import this at the top
@@ -17,7 +17,7 @@ const FloatingButtons = () => {
       text: "Web Development",
       theme: "web",
       direction: "y",
-      position: { left: "40%", top: "70%" },
+      position: { left: "37%", top: "47%" },
       gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
       accentColor: "#f093fb",
       video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/WEBD.mp4" // Replace with actual web dev video
@@ -26,7 +26,7 @@ const FloatingButtons = () => {
       text: "Mobile Apps",
       theme: "mobile",
       direction: "x",
-      position: { left: "10%", top: "30%" },
+      position: { left: "5%", top: "20%" },
       gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       accentColor: "#4facfe",
       video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/APPD.mp4" // Replace with actual mobile video
@@ -35,7 +35,7 @@ const FloatingButtons = () => {
       text: "Cloud Solutions",
       theme: "cloud",
       direction: "y",
-      position: { left: "75%", top: "30%" },
+      position: { right: "5%", top: "20%" },
       gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
       accentColor: "#43e97b",
       video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/Cloud.mp4" // Replace with actual cloud video
@@ -44,7 +44,7 @@ const FloatingButtons = () => {
       text: "Data Analytics",
       theme: "data",
       direction: "x",
-      position: { left: "70%", top: "65%" },
+      position: { right: "5%", top: "70%" },
       gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
       accentColor: "#fa709a",
       video: "https://myacaabucket.s3.eu-north-1.amazonaws.com/DataAnalytcs.mp4" // Replace with actual data video
@@ -92,6 +92,7 @@ const FloatingButtons = () => {
     buttonWrapper: (button, index, isHovered) => ({
       position: 'absolute',
       left: button.position.left,
+      right:button.position.right,
       top: button.position.top,
       zIndex: isHovered ? 100 : 10,
       animation: `float-${button.direction} 6s ease-in-out infinite`,

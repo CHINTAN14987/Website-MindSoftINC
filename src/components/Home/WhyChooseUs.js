@@ -232,7 +232,6 @@ const WhyChooseUs = () => {
       <style jsx>{`
         .why-choose-us-section {
           min-height: 100vh;
-          padding: 120px 0;
           background: radial-gradient(ellipse at top, #1a1a1a 0%, #000000 100%);
           position: relative;
           overflow: hidden;
@@ -254,7 +253,7 @@ const WhyChooseUs = () => {
         .container {
           max-width: 1400px;
           margin: 0 auto;
-          padding: 0 20px;
+          padding: 30px 20px 30px 20px;
           position: relative;
           z-index: 1;
         }

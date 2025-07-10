@@ -64,7 +64,7 @@ const Navbar = () => {
     <div className={`navbar-wrapper ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          {/* <img src={logoSvg} alt="Logo" /> */}
+          <img src={logoSvg} alt="Logo"  style={{height:"60px",width:"60px",borderRadius:"50%",objectFit:"cover"}}/>
         </div>
 
         <button

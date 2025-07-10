@@ -5,11 +5,11 @@
   display: flex;
   justify-content: center;
   position: fixed;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   top: 0;
   width: 100%;
 
-  height: var(--navbar-height);
+  height: 75px !important;
   /* background: linear-gradient(to right, #1a0b35, #2d1654, #47267a, #34103e, #0e0629);  */
   z-index: 9999;
   transition: all var(--transition-speed) ease;
