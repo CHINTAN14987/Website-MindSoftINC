@@ -27,8 +27,8 @@ const Home = () => {
       <AnimatedSection delay={0.1}>
         <ImageSlider />
       </AnimatedSection>
-      <div style={{ position: "relative", height: "100vh" }}>
-        <Waves
+      {/* <div style={{ position: "relative", height: "100vh" }}> */}
+        {/* <Waves
           lineColor="rgba(255, 255, 255, 0.1)"
           backgroundColor="#000"
           waveSpeedX={0.02}
@@ -40,16 +40,16 @@ const Home = () => {
           maxCursorMove={120}
           xGap={12}
           yGap={36}
-        />
-        <motion.div
+        /> */}
+        {/* <motion.div
           style={{ position: "absolute", width: "100%", zIndex: 2 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }} // Adjust delay as needed
         >
           <FloatingButtons />
-        </motion.div>
-      </div>
+        </motion.div> */}
+      {/* </div> */}
 
 
 
